@@ -8,8 +8,7 @@
   },
   "scripts": {
     "build:css": "node-sass --output-style compressed source/scss/style.scss | cleancss > static/css/style.css",
-    "build:js": "cp node_modules/bootstrap/dist/js/bootstrap.min.js node_modules/jquery/dist/jquery.min.js static/js",
-    "build": "npm run build:css & npm run build:js"
+    "build": "npm run build:css"
   },
   "keywords": "hugo",
   "author": "Alan Orth",
@@ -19,7 +18,6 @@
   },
   "dependencies": {
     "bootstrap": "4.0.0-alpha.3",
-    "jquery": "3.0.0"
   },
   "devDependencies": {
     "clean-css": "^3.4.19",
