@@ -1,6 +1,8 @@
 # Hugo Bootstrap v4
 A simple [Hugo](https://gohugo.io) theme based on the [Bootstrap v4 blog example](http://v4-alpha.getbootstrap.com/examples/blog).
 
+![Screenshot](/screenshot@2x.png?raw=true "Screenshot")
+
 ## Usage
 Clone the repository to your site's `themes` directory.
 
