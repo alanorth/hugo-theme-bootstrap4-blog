@@ -1,0 +1,6 @@
+<div class="blog-post">
+  <h2 class="blog-post-title"><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h2>
+  <p class="blog-post-meta">{{ .Date.Format "Mon, Jan 2, 2006" }} by <a href="#">Mark</a></p>
+  {{ .Summary }}
+  <a href='{{ .Permalink }}'><nobr>Read more →</nobr></a>
+</div> <!-- /.blog-post -->

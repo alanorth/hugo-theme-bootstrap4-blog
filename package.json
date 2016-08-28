@@ -1,0 +1,25 @@
+{
+  "name": "hugo-theme-bootstrap4",
+  "version": "0.0.1",
+  "description": "A Bootstrap v4 theme for the Hugo static site generator.",
+  "private": "true",
+  "scripts": {
+    "build:css": "node-sass --output-style compressed source/scss/style.scss | cleancss > static/css/style.css",
+    "build:js": "cp node_modules/bootstrap/dist/js/bootstrap.min.js node_modules/jquery/dist/jquery.min.js static/js",
+    "build": "npm run build:css & npm run build:js"
+  },
+  "keywords": "hugo",
+  "author": "Alan Orth",
+  "license": "GPL-3.0",
+  "engines": {
+    "node": "4.5.0"
+  },
+  "dependencies": {
+    "bootstrap": "4.0.0-alpha.3",
+    "jquery": "3.0.0"
+  },
+  "devDependencies": {
+    "clean-css": "^3.4.19",
+    "node-sass": "^3.8.0"
+  }
+}

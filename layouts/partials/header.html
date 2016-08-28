@@ -1,0 +1,6 @@
+<div class="blog-header">
+  <div class="container">
+    <h1 class="blog-title">{{ .Title | safeHTML }}</h1>
+    {{ if .Site.Params.description }}<p class="lead blog-description">{{ .Site.Params.description | safeHTML }}</p>{{ end }}
+  </div>
+</div>

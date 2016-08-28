@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8 blog-main">
+      {{ range .Data.Pages }}
+      {{ .Render "summary"}}
+      {{ end }}
+    </div> <!-- /.blog-main -->
+
+    {{ partial "sidebar.html" . }}
+
+  </div> <!-- /.row -->
+</div> <!-- /.container -->
