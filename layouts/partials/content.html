@@ -6,7 +6,9 @@
       {{ end }}
     </div> <!-- /.blog-main -->
 
-    {{ partial "sidebar.html" . }}
+    {{ if not .Site.Params.sidebar.hide }}
+      {{ partial "sidebar.html" . }}
+    {{ end }}
 
   </div> <!-- /.row -->
 </div> <!-- /.container -->
