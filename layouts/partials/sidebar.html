@@ -3,6 +3,18 @@
     <h4>About</h4>
     <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
   </div>
+
+  {{ if isset .Site.Params.sidebar "num_recent_posts" }}
+  <div class="sidebar-module">
+    <h4>Recent Posts</h4>
+    <ol class="list-unstyled">
+      {{ range first .Site.Params.sidebar.num_recent_posts .Site.Pages }}
+      <li><a href="{{.RelPermalink}}">{{.Title}}</a></li>
+      {{ end }}
+    </ol>
+  </div>
+  {{ end }}
+
   <div class="sidebar-module">
     <h4>Archives</h4>
     <ol class="list-unstyled">
