@@ -15,4 +15,4 @@ $ npm run build
 ## License
 This repository contains the code of [Bootstrap](http://getbootstrap.com) and [jQuery](https://jquery.com/), both of which are licensed under the [MIT license](https://tldrlegal.com/license/mit-license).
 
-Otherwise, the contents of index.html is [GPLv3](https://www.gnu.org/licenses/gpl-3.0.txt).
+Otherwise, the contents are [GPLv3](https://www.gnu.org/licenses/gpl-3.0.txt).
