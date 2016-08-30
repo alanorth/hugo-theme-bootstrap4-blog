@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col-sm-8 blog-main">
       <article class="blog-post">
-        <h1 class="blog-post-title"><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h1>
+        <h2 class="blog-post-title"><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h2>
         <p class="blog-post-meta"><time datetime="{{ .Date }}">{{ .Date.Format .Site.Params.date_format }}</time> by <a href="#">{{ .Params.author | default .Site.Params.author }}</a></p>
         {{ .Content }}
       </article> <!-- /.blog-post -->
