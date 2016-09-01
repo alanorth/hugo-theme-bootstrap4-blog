@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {{ "<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->" | safeHTML }}
+
+    {{ if .Site.Params.description }}<meta name="description" content="{{ .Site.Params.description }}">{{ end }}
+    {{ if .Site.Params.author }}<meta name="author" content="{{ .Site.Params.author }}">{{ end }}
+
+    {{ .Hugo.Generator }}
+
+    <base href="{{ .Site.BaseURL }}">
+    <link rel="canonical" href="{{ .Permalink }}">
+
+    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+
+    {{ "<!-- combined, minified CSS -->" | safeHTML }}
+    <link href="{{ .Site.BaseURL }}css/style.css" rel="stylesheet">
+  </head>
+
+<body>
+
+  <div class="blog-masthead">
+    <div class="container">
+      <nav class="nav blog-nav">
+        <a class="nav-link" href="{{ .Site.BaseURL }}">Home</a>
+      </nav>
+    </div>
+  </div>
+
+  <div class="blog-header">
+    <div class="container">
+      <h1 class="blog-title">{{ .Site.Title | safeHTML }}</h1>
+      {{ if .Site.Params.description }}<p class="lead blog-description">{{ .Site.Params.description | safeHTML }}</p>{{ end }}
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 blog-main">
+
+        {{ block "main" . }}
+        <!-- The part of the page that begins to differ between templates -->
+        {{ end }}
+
+      </div> {{ "<!-- /.blog-main -->" | safeHTML }}
+
+      {{ if not .Site.Params.sidebar.hide }}
+        {{ partial "sidebar.html" . }}
+      {{ end }}
+
+    </div> {{ "<!-- /.row -->" | safeHTML }}
+  </div> {{ "<!-- /.container -->" | safeHTML }}
+
+  <footer class="blog-footer">
+    <p>
+      Blog template built by <a href='https://twitter.com/mralanorth'>@mralanorth</a>.
+    </p>
+  </footer>
+
+</body>
+
+</html>
