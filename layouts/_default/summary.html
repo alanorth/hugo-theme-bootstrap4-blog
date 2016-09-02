@@ -1,6 +1,6 @@
 <article class="blog-post">
   <header>
-    <h2 class="blog-post-title"><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h2>
+    <h1 class="blog-post-title"><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h1>
     <p class="blog-post-meta"><time datetime="{{ .Date }}">{{ .Date.Format .Site.Params.date_format }}</time> by <a href="#">{{ .Params.author | default .Site.Params.author }}</a></p>
   </header>
   {{ .Summary }}
