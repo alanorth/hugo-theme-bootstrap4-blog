@@ -1,21 +1,21 @@
-<div class="col-sm-3 offset-sm-1 blog-sidebar">
-  <div class="sidebar-module sidebar-module-inset">
+<aside class="col-sm-3 offset-sm-1 blog-sidebar">
+  <section class="sidebar-module sidebar-module-inset">
     <h4>About</h4>
     <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-  </div>
+  </section>
 
   {{ if isset .Site.Params.sidebar "num_recent_posts" }}
-  <div class="sidebar-module">
+  <section class="sidebar-module">
     <h4>Recent Posts</h4>
     <ol class="list-unstyled">
       {{ range first .Site.Params.sidebar.num_recent_posts .Site.Pages }}
       <li><a href="{{.RelPermalink}}">{{.Title}}</a></li>
       {{ end }}
     </ol>
-  </div>
+  </section>
   {{ end }}
 
-  <div class="sidebar-module">
+  <section class="sidebar-module">
     <h4>Archives</h4>
     <ol class="list-unstyled">
     <li><a href="#">March 2014</a></li>
@@ -31,13 +31,13 @@
     <li><a href="#">May 2013</a></li>
     <li><a href="#">April 2013</a></li>
     </ol>
-  </div>
-  <div class="sidebar-module">
+  </section>
+  <section class="sidebar-module">
     <h4>Elsewhere</h4>
     <ol class="list-unstyled">
     <li><a href="#">GitHub</a></li>
     <li><a href="#">Twitter</a></li>
     <li><a href="#">Facebook</a></li>
     </ol>
-  </div>
-</div><!-- /.blog-sidebar -->
+  </section>
+</aside><!-- /.blog-sidebar -->
