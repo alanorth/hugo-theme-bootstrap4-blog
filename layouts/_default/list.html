@@ -1,6 +1,8 @@
 {{ define "main" }}
 
-  {{ range .Data.Pages }}
+  {{ $num_recent_posts := .Site.Params.num_recent_posts | default "5" }}
+
+  {{ range first $num_recent_posts .Data.Pages }}
     {{ .Render "summary"}}
   {{ end }}
 
