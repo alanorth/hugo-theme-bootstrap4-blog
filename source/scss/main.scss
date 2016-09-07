@@ -151,7 +151,11 @@ h6, .h6 {
   margin-bottom: 1.25rem;
   color: #999;
 }
-
+article img {
+  max-width: 100%;
+  height: auto;
+  margin: 13px auto;
+}
 
 /*
  * Footer
