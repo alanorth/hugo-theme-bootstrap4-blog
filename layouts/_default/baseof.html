@@ -34,7 +34,7 @@
   <header class="blog-header">
     <div class="container">
       <h1 class="blog-title">{{ .Site.Title | safeHTML }}</h1>
-      {{ if .Site.Params.description }}<p class="lead blog-description">{{ .Site.Params.description | safeHTML }}</p>{{ end }}
+      {{ if .Site.Params.description }}<p class="lead blog-description">{{ .Site.Params.description | markdownify }}</p>{{ end }}
     </div>
   </header>
 
