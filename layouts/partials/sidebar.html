@@ -6,16 +6,16 @@
   </section>
   {{ end }}
 
-  {{ if isset .Site.Params.sidebar "num_recent_posts" }}
+  {{ $num_recent_posts := (index .Site.Params.sidebar "num_recent_posts" | default 5) }}
+
   <section class="sidebar-module">
     <h4>Recent Posts</h4>
     <ol class="list-unstyled">
-      {{ range first .Site.Params.sidebar.num_recent_posts .Site.Pages }}
+      {{ range first $num_recent_posts .Site.Pages }}
       <li><a href="{{.RelPermalink}}">{{.Title}}</a></li>
       {{ end }}
     </ol>
   </section>
-  {{ end }}
 
   <section class="sidebar-module">
     <h4>Elsewhere</h4>
