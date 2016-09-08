@@ -13,9 +13,6 @@
   "keywords": "hugo",
   "author": "Alan Orth",
   "license": "GPL-3.0",
-  "engines": {
-    "node": "6.3.1"
-  },
   "dependencies": {
     "bootstrap": "4.0.0-alpha.3"
   },
