@@ -17,12 +17,14 @@
     </ol>
   </section>
 
+  {{ with .Site.Menus.sidebar }}
   <section class="sidebar-module">
-    <h4>Elsewhere</h4>
+    <h4>Links</h4>
     <ol class="list-unstyled">
-    <li><a href="#">GitHub</a></li>
-    <li><a href="#">Twitter</a></li>
-    <li><a href="#">Facebook</a></li>
+      {{ range . }}
+      <li><a href="{{ .URL | absURL }}">{{ .Name }}</a></li>
+      {{ end }}
     </ol>
   </section>
+  {{ end }}
 </aside><!-- /.blog-sidebar -->
