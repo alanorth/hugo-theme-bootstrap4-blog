@@ -22,6 +22,7 @@ $ npm run build
 - add metadata for open graph
 - add optional social links to sidebar
 - add configurable license notice for footer
+- add favicon
 
 ## License
 This repository contains the code of [Bootstrap](http://getbootstrap.com), which is licensed under the [MIT license](https://tldrlegal.com/license/mit-license).
