@@ -14,6 +14,15 @@ $ npm install
 $ npm run build
 ```
 
+## TODO
+
+- tags + categories!
+- add an exampleSite showing optional and mandatory configuration options
+- allow configuration of header nav links
+- add metadata for open graph
+- add optional social links to sidebar
+- add configurable license notice for footer
+
 ## License
 This repository contains the code of [Bootstrap](http://getbootstrap.com), which is licensed under the [MIT license](https://tldrlegal.com/license/mit-license).
 
