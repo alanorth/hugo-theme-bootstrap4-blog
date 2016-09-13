@@ -10,6 +10,8 @@
     {{ if .Site.Params.description }}<meta name="description" content="{{ .Site.Params.description }}">{{ end }}
     {{ if .Site.Params.author }}<meta name="author" content="{{ .Site.Params.author }}">{{ end }}
 
+    {{ if .Site.Params.google_verify_meta }}<meta name="google-site-verification" content="{{ .Site.Params.google_verify_meta }}">{{ end }}
+
     {{ .Hugo.Generator }}
 
     <base href="{{ .Site.BaseURL }}">
