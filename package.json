@@ -18,6 +18,6 @@
   },
   "devDependencies": {
     "clean-css": "^3.4.19",
-    "node-sass": "^3.8.0"
+    "node-sass": "^3.9.3"
   }
 }
