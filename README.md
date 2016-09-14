@@ -23,7 +23,6 @@ $ npm run build
 - add optional social links to sidebar
 - add configurable license notice for footer
 - add favicon
-- add meta description / summary from front matter
 - add author page (for when you click author name in a post/summary)
 
 ## License
