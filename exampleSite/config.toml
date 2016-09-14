@@ -1,0 +1,46 @@
+# Hugo variables
+# 
+baseurl = "http://replace-this-with-your-hugo-site.com/"
+languageCode = "en-us"
+title = "Hugo Bootstrap v4 Blog"
+theme = "hugo-theme-bootstrap4"
+
+[permalinks]
+  post = "/:year/:month/:title/"
+  page = "/:slug/"
+
+[[menu.sidebar]]
+  name = "Link 1"
+  url = "https://example.com"
+
+[[menu.sidebar]]
+  name = "Link 2"
+  url = "https://example.org"
+
+# Theme variables
+#
+[params]
+  # Site author
+  author = "Your Name"
+
+  # Description/subtitle for homepage (can be Markdown)
+  description = "A simple Hugo theme based on the Bootstrap v4 blog example."
+
+  # How many posts to show on the homepage (Default: 5)
+  #num_recent_posts = 5
+
+  # Format dates with Go's time formatting
+  date_format = "Mon Jan 02, 2006"
+
+  # verification string for Google Webmaster Tools
+  #google_verify_meta = "BAi57DROASu4b2mkVNA_EyUsobfA7Mq8BmSg7Rn-Zp9"
+
+  [params.sidebar]
+    # Hide the sidebar? (Default: false)
+    hide = false
+
+    # Optional about block for sidebar (can be Markdown)
+    about = "A simple Hugo theme based on the [Bootstrap v4 blog example](http://v4-alpha.getbootstrap.com/examples/blog/)."
+
+    # How many posts to show on the homepage (Default: 5)
+    #num_recent_posts = 2
