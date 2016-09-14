@@ -28,7 +28,7 @@
   <div class="blog-masthead">
     <div class="container">
       <nav class="nav blog-nav">
-        <a class="nav-link" href="{{ .Site.BaseURL }}">Home</a>
+        <a class="nav-link {{ if .IsHome }}active{{ end }}" href="{{ .Site.BaseURL }}">Home</a>
       </nav>
     </div>
   </div>
