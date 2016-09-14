@@ -4,5 +4,5 @@
     <p class="blog-post-meta"><time datetime="{{ .Date }}">{{ .Date.Format .Site.Params.date_format }}</time> by <a href="#">{{ .Params.author | default .Site.Params.author }}</a></p>
   </header>
   {{ .Summary }}
-  <a href='{{ .Permalink }}'><nobr>Read more →</nobr></a>
+  <a href='{{ .Permalink }}'>Read more →</a>
 </article> <!-- /.blog-post -->
