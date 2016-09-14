@@ -17,7 +17,6 @@ $ npm run build
 ## TODO
 
 - tags + categories!
-- add an exampleSite showing optional and mandatory configuration options
 - allow configuration of header nav links
 - add metadata for open graph
 - add optional social links to sidebar
