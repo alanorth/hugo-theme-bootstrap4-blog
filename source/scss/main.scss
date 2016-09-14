@@ -94,6 +94,11 @@ h6, .h6 {
   font-size: 2rem;
   font-weight: normal;
 }
+.blog-title a,
+.blog-title a:hover,
+.blog-title a:focus {
+  color: inherit;
+}
 .blog-description {
   font-size: 1.1rem;
   color: #999;
