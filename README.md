@@ -24,6 +24,7 @@ $ npm run build
 - add configurable license notice for footer
 - add favicon
 - add author page (for when you click author name in a post/summary)
+- add images to sitemap? https://gohugo.io/templates/sitemap/
 
 ## License
 This repository contains the code of [Bootstrap](http://getbootstrap.com), which is licensed under the [MIT license](https://tldrlegal.com/license/mit-license).
