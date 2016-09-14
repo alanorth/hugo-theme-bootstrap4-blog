@@ -24,7 +24,6 @@ $ npm run build
 - add configurable license notice for footer
 - add favicon
 - add meta description / summary from front matter
-- make site header clickable (to home)
 
 ## License
 This repository contains the code of [Bootstrap](http://getbootstrap.com), which is licensed under the [MIT license](https://tldrlegal.com/license/mit-license).
