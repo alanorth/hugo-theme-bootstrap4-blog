@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     {{ "<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->" | safeHTML }}
 
-    {{ if .Site.Params.description }}<meta name="description" content="{{ .Site.Params.description }}">{{ end }}
+    <meta name="description" content="{{ .Params.description | default .Site.Params.description }}">
     {{ if .Site.Params.author }}<meta name="author" content="{{ .Site.Params.author }}">{{ end }}
 
     {{ if .Site.Params.google_verify_meta }}<meta name="google-site-verification" content="{{ .Site.Params.google_verify_meta }}">{{ end }}
