@@ -2,7 +2,7 @@
 
   {{ $num_recent_posts := .Site.Params.num_recent_posts | default "5" }}
 
-  {{ range first $num_recent_posts .Data.Pages }}
+  {{ range first $num_recent_posts (where .Data.Pages "Section" "post") }}
     {{ .Render "summary"}}
   {{ end }}
 
