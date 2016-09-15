@@ -8,7 +8,8 @@
   },
   "scripts": {
     "build:css": "node-sass --output-style compressed source/scss/style.scss | cleancss > static/css/style.css",
-    "build": "npm run build:css"
+    "build:fonts": "cp node_modules/font-awesome/fonts/* static/fonts",
+    "build": "npm run build:css && npm run build:fonts"
   },
   "keywords": "hugo",
   "author": "Alan Orth",
