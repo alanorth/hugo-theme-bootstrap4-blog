@@ -5,4 +5,5 @@ $enable-grid-classes:       true;
 // optional: import local styles first
 @import 'source/scss/main.scss';
 
+@import 'node_modules/font-awesome/scss/font-awesome.scss';
 @import 'node_modules/bootstrap/scss/bootstrap.scss';
