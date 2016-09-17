@@ -17,7 +17,6 @@ $ npm run build
 ## TODO
 
 - tags + categories!
-- add metadata for open graph
 - add optional social links to sidebar
 - add configurable license notice for footer
 - add favicon
