@@ -11,7 +11,7 @@
   <section class="sidebar-module">
     <h4>Recent Posts</h4>
     <ol class="list-unstyled">
-      {{ range first $num_recent_posts (where .Site.Pages "Section" "post") }}
+      {{ range first $num_recent_posts (where .Site.Pages "Type" "post") }}
       <li><a href="{{.RelPermalink}}">{{.Title}}</a></li>
       {{ end }}
     </ol>
