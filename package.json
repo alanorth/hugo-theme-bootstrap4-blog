@@ -18,6 +18,6 @@
     "bootstrap": "4.0.0-alpha.4",
     "clean-css": "3.4.19",
     "font-awesome": "4.6.3",
-    "node-sass": "3.9.3"
+    "node-sass": "3.10.0"
   }
 }
