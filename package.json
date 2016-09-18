@@ -7,7 +7,7 @@
     "url": "https://github.com/alanorth/hugo-theme-bootstrap4.git"
   },
   "scripts": {
-    "build:css": "node-sass --output-style compressed source/scss/style.scss | cleancss > static/css/style.css",
+    "build:css": "node-sass --output-style compressed source/scss/style.scss static/css/style.css",
     "build:fonts": "cp node_modules/font-awesome/fonts/* static/fonts",
     "build": "npm run build:css && npm run build:fonts"
   },
@@ -16,7 +16,6 @@
   "license": "GPL-3.0",
   "devDependencies": {
     "bootstrap": "4.0.0-alpha.4",
-    "clean-css": "3.4.19",
     "font-awesome": "4.6.3",
     "node-sass": "3.10.0"
   }
