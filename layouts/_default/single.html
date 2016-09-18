@@ -6,5 +6,9 @@
           <p class="blog-post-meta"><time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format .Site.Params.date_format }}</time> by <a href="#">{{ .Params.author | default .Site.Params.author }}</a></p>
         </header>
         {{ .Content }}
+
+        {{ if not .Site.Params.sharingicons.hide }}
+          {{ partial "sharing-icons.html" . }}
+        {{ end }}
       </article> <!-- /.blog-post -->
 {{ end }}
