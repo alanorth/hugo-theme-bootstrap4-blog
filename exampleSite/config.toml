@@ -44,3 +44,18 @@ theme = "hugo-theme-bootstrap4"
 
     # How many posts to show on the homepage (Default: 5)
     #num_recent_posts = 2
+
+  [params.social]
+    # Optional, used for attribution in Twitter cards
+    # See: https://dev.twitter.com/cards/types/summary-large-image
+    twitter_username = "@username"
+
+  [params.sharingicons]
+    # Hide the sharing icons on posts? (Default: false)
+    hide = false
+
+    # Optionally, set any of these to false to hide them:
+    #facebook = true
+    #googleplus = true
+    #linkedin = true
+    #twitter = true
