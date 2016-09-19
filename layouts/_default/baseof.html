@@ -16,6 +16,9 @@
 
     {{ "<!-- combined, minified CSS -->" | safeHTML }}
     <link href="{{ .Site.BaseURL }}css/style.css" rel="stylesheet">
+
+    {{ "<!-- RSS 2.0 feed of posts -->" | safeHTML }}
+    <link href="{{ .Site.BaseURL }}post/index.xml" type="application/rss+xml" rel="alternate">
   </head>
 
 <body>
