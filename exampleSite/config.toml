@@ -3,7 +3,7 @@
 baseurl = "http://replace-this-with-your-hugo-site.com/"
 languageCode = "en-us"
 title = "Hugo Bootstrap v4 Blog"
-theme = "hugo-theme-bootstrap4"
+theme = "hugo-theme-bootstrap4-blog"
 
 [permalinks]
   post = "/:year/:month/:title/"

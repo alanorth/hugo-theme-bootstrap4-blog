@@ -1,10 +1,10 @@
 {
-  "name": "hugo-theme-bootstrap4",
+  "name": "hugo-theme-bootstrap4-blog",
   "version": "0.0.1",
   "description": "A Bootstrap v4 theme for the Hugo static site generator.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/alanorth/hugo-theme-bootstrap4.git"
+    "url": "https://github.com/alanorth/hugo-theme-bootstrap4-blog.git"
   },
   "scripts": {
     "build:css": "node-sass --output-style compressed source/scss/style.scss static/css/style.css",
