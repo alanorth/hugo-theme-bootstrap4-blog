@@ -6,6 +6,7 @@ A simple [Hugo](https://gohugo.io) theme based on the [Bootstrap v4 blog example
 ## Features
 
 - Basic [OpenGraph](http://ogp.me) and [Twitter Card](https://dev.twitter.com/cards/types) metadata support
+- robots.txt linking to XML sitemap (disabled by default, see [Hugo docs](https://gohugo.io/extras/robots-txt/))
 
 ## Usage
 Clone the repository to your site's `themes` directory. Refer to `exampleSite/config.toml` for optional configuration values.
