@@ -6,4 +6,7 @@ $enable-grid-classes:       true;
 @import 'source/scss/main.scss';
 
 @import 'node_modules/font-awesome/scss/font-awesome.scss';
-@import 'node_modules/bootstrap/scss/bootstrap.scss';
+
+// selectively import components we need from bootstrap
+// see: node_modules/bootstrap/scss/bootstrap.scss
+@import 'source/scss/bootstrap.scss';
