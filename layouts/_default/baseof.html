@@ -51,7 +51,7 @@
 
       </div> {{ "<!-- /.blog-main -->" | safeHTML }}
 
-      {{ if not .Site.Params.sidebar.hide }}
+      {{ if and (.Site.Params.sidebar) (not .Site.Params.sidebar.hide) }}
         {{ partial "sidebar.html" . }}
       {{ end }}
 
