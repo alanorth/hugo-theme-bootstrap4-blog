@@ -21,7 +21,7 @@ $ npm run build
 
 ## TODO
 
-- tags + categories!
+- tags + categories! [#1](https://github.com/alanorth/hugo-theme-bootstrap4-blog/issues/1)
 - add optional social links to sidebar
 - add configurable license notice for footer
 - add favicon
