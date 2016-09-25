@@ -3,6 +3,8 @@ A simple [Hugo](https://gohugo.io) theme based on the [Bootstrap v4 blog example
 
 ![Screenshot](/screenshot@2x.png?raw=true "Screenshot")
 
+See [my blog](https://picturingjordan.com) for an example of this theme in use.
+
 ## Features
 
 - Basic [OpenGraph](http://ogp.me) and [Twitter Card](https://dev.twitter.com/cards/types) metadata support
