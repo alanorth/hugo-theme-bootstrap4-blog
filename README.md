@@ -30,6 +30,9 @@ $ npm run build
 - add favicon
 - add author page (for when you click author name in a post/summary) [#2](https://github.com/alanorth/hugo-theme-bootstrap4-blog/issues/2)
 - add images to sitemap? https://gohugo.io/templates/sitemap/
+- add Bing and Yandex verification support
+- add support for Disqus (I don't use it!)
+- add support for Google Analytics (I don't use it!)
 
 ## License
 This repository contains the code of [Bootstrap](http://getbootstrap.com), which is licensed under the [MIT license](https://tldrlegal.com/license/mit-license), and [Font Awesome](http://fontawesome.io/), which uses [various licenses](http://fontawesome.io/license/).
