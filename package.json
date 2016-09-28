@@ -16,9 +16,9 @@
   "author": "Alan Orth",
   "license": "GPL-3.0",
   "devDependencies": {
-    "bootstrap": "4.0.0-alpha.4",
+    "bootstrap": "~4.0.0-alpha.4",
     "cssnano-cli": "^1.0.5",
-    "font-awesome": "4.6.3",
-    "node-sass": "3.10.0"
+    "font-awesome": "^4.6.3",
+    "node-sass": "latest"
   }
 }
