@@ -1,0 +1,14 @@
+- id: about
+  translation: "About"
+
+- id: recentPosts
+  translation: "Recent Posts"
+
+- id: readMore
+  translation: "Read more"
+
+- id: translations
+  translation: "Translations"
+
+- id: share
+  translation: "Share"

@@ -8,7 +8,7 @@
         {{ .Content }}
 
         {{ if .IsTranslated }}
-        <h4>Translations</h4>
+        <h4>{{ i18n "translations" }}</h4>
           <ul>
           {{ range .Translations }}
             <li>

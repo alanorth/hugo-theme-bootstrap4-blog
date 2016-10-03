@@ -1,7 +1,7 @@
         <hr>
         <footer>
           <header>
-            <h4>Share</h4>
+            <h4>{{ i18n "share" }}</h4>
           </header>
           <nav class="nav nav-inline">
           {{ if not (eq .Site.Params.sharingicons.facebook false) }}<a class="nav-item" href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}" title="Share on Facebook"><span class="fa fa-facebook fa-2x" aria-hidden="true"></span></a>{{ end }}

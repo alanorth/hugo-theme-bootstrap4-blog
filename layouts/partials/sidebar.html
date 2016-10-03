@@ -1,7 +1,7 @@
 <aside class="col-sm-3 offset-sm-1 blog-sidebar">
   {{ if isset .Site.Params.sidebar "about" }}
   <section class="sidebar-module sidebar-module-inset">
-    <h4>About</h4>
+    <h4>{{ i18n "about" }}</h4>
     <p>{{ .Site.Params.sidebar.about | markdownify }}</p>
   </section>
   {{ end }}
@@ -9,7 +9,7 @@
   {{ $num_recent_posts := (index .Site.Params.sidebar "num_recent_posts" | default 5) }}
 
   <section class="sidebar-module">
-    <h4>Recent Posts</h4>
+    <h4>{{ i18n "recentPosts" }}</h4>
     <ol class="list-unstyled">
       {{ range first $num_recent_posts (where .Site.Pages "Type" "post") }}
       <li><a href="{{.RelPermalink}}">{{.Title}}</a></li>
