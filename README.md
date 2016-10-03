@@ -11,6 +11,7 @@ See [my blog](https://picturingjordan.com) for an example of this theme in use.
 - Basic [OpenGraph](http://ogp.me) and [Twitter Card](https://dev.twitter.com/cards/types) metadata support
 - robots.txt linking to XML sitemap (disabled by default, see [Hugo docs](https://gohugo.io/extras/robots-txt/))
 - Displays categories and tags from front matter
+- Basic support for [multi-lingual content](https://github.com/spf13/hugo/blob/master/docs/content/content/multilingual.md) (added in Hugo 0.17)
 
 ## Usage
 Clone the repository to your site's `themes` directory. Refer to `exampleSite/config.toml` for optional configuration values.
