@@ -35,6 +35,7 @@ $ npm run build
 - add Bing and Yandex verification support
 - add support for Disqus (I don't use it!)
 - add support for Google Analytics (I don't use it!)
+- test multilang stuff like menus, probably need more absURL/relURL fixes
 
 ## License
 This repository contains the code of [Bootstrap](http://getbootstrap.com), which is licensed under the [MIT license](https://tldrlegal.com/license/mit-license), and [Font Awesome](http://fontawesome.io/), which uses [various licenses](http://fontawesome.io/license/).
