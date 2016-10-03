@@ -7,6 +7,16 @@
         </header>
         {{ .Content }}
 
+        {{ if .IsTranslated }}
+        <h4>Translations</h4>
+          <ul>
+          {{ range .Translations }}
+            <li>
+              <a href="{{ .Permalink }}">{{ .Lang }}: {{ .Title }}{{ if .IsPage }}{{ end }}</a>
+            </li>
+          {{ end }}
+          </ul>
+        {{ end }}
         {{ if not .Site.Params.sharingicons.hide }}
           {{ partial "sharing-icons.html" . }}
         {{ end }}
