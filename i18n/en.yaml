@@ -15,3 +15,9 @@
 
 - id: share
   translation: "Share"
+
+- id: paginatorPrevious
+  translation: "Previous page"
+
+- id: paginatorNext
+  translation: "Next page"
