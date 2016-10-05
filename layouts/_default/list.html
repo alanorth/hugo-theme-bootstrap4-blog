@@ -1,9 +1,8 @@
 {{ define "main" }}
 
-  {{ $num_recent_posts := .Site.Params.num_recent_posts | default "5" }}
-
-  {{ range first $num_recent_posts (where .Data.Pages "Type" "post") }}
-    {{ .Render "summary"}}
+  {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
+  {{ range $paginator.Pages }}
+   {{ .Render "summary" }}
   {{ end }}
 
 {{ end }}
