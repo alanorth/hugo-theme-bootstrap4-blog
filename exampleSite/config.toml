@@ -41,7 +41,7 @@ paginate = 5
     # Optional about block for sidebar (can be Markdown)
     about = "A simple Hugo theme based on the [Bootstrap v4 blog example](http://v4-alpha.getbootstrap.com/examples/blog/)."
 
-    # How many posts to show on the homepage (Default: 5)
+    # How many posts to show on the sidebar (Default: 5)
     #num_recent_posts = 2
 
   [params.social]
