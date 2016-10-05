@@ -7,17 +7,14 @@
 
   <nav class="blog-pagination">
     {{ if and (.Paginator.HasPrev) (.Paginator.HasNext) }}
-    <h3>case 1</h3>
     <a class="btn btn-outline-primary" href="{{ .Paginator.Prev.URL }}" role="button">{{ i18n "paginatorPrevious" }}</a>
     <a class="btn btn-outline-primary" href="{{ .Paginator.Next.URL }}" role="button">{{ i18n "paginatorNext" }}</a>
     {{ end }}
     {{ if and (.Paginator.HasPrev) (not .Paginator.HasNext) }}
-    <h3>case 2</h3>
     <a class="btn btn-outline-primary" href="{{ .Paginator.Prev.URL }}" role="button">{{ i18n "paginatorPrevious" }}</a>
     <a class="btn btn-outline-primary disabled" href="#" role="button" aria-disabled="true">{{ i18n "paginatorNext" }}</a>
     {{ end }}
     {{ if and (not .Paginator.HasPrev) (.Paginator.HasNext) }}
-    <h3>case 3</h3>
     <a class="btn btn-outline-primary disabled" href="#" role="button" aria-disabled="true">{{ i18n "paginatorPrevious" }}</a>
     <a class="btn btn-outline-primary" href="{{ .Paginator.Next.URL }}" role="button">{{ i18n "paginatorNext" }}</a>
     {{ end }}
