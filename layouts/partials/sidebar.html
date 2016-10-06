@@ -12,7 +12,7 @@
     <h4>{{ i18n "recentPosts" }}</h4>
     <ol class="list-unstyled">
       {{ range first $num_recent_posts (where .Site.Pages "Type" "post") }}
-      <li><a href="{{.RelPermalink}}">{{.Title}}</a></li>
+      <li><a href="{{.RelPermalink}}">{{.Title | markdownify }}</a></li>
       {{ end }}
     </ol>
   </section>
