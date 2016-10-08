@@ -32,7 +32,6 @@ $ npm run build
 - add favicon
 - add author page (for when you click author name in a post/summary) [#2](https://github.com/alanorth/hugo-theme-bootstrap4-blog/issues/2)
 - add images to sitemap? https://gohugo.io/templates/sitemap/
-- add Bing and Yandex verification support
 - add support for Disqus (I don't use it!)
 - add support for Google Analytics (I don't use it!)
 - test multilang stuff like menus, probably need more absURL/relURL fixes
