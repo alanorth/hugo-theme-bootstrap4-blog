@@ -38,4 +38,16 @@
     <meta property="twitter:title" content="{{ $title }}">
     <meta property="twitter:description" content="{{ $description }}">
 
+    {{ if .Site.Params.google_verify_meta }}
+    <meta name="google-site-verification" content="{{ .Site.Params.google_verify_meta }}" />
+    {{ end }}
+
+    {{ if .Site.Params.bing_verify_meta }}
+    <meta name="msvalidate.01" content="{{ .Site.Params.bing_verify_meta }}" />
+    {{ end }}
+
+    {{ if .Site.Params.yandex_verify_meta }}
+    <meta name="yandex-verification" content="{{ .Site.Params.yandex_verify_meta }}" />
+    {{ end }}
+
     {{ .Hugo.Generator }}
