@@ -13,6 +13,7 @@ See [my blog](https://picturingjordan.com) for an example of this theme in use.
 - Displays categories and tags from front matter
 - Basic support for [multi-lingual content](https://github.com/spf13/hugo/blob/master/docs/content/content/multilingual.md) (added in Hugo 0.17)
 - Configurable [pagination](https://gohugo.io/extras/pagination/) for posts, categories, and tags pages
+- Support Google, Bing, and Yandex site verification via meta tags
 
 ## Usage
 Clone the repository to your site's `themes` directory. Refer to `exampleSite/config.toml` for optional configuration values.
