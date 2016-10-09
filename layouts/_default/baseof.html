@@ -55,7 +55,11 @@
 
   <footer class="blog-footer">
     <p>
+      {{ if .Site.Copyright }}
+      {{ .Site.Copyright | markdownify }}
+      {{ else }}
       Blog template built by <a href='https://twitter.com/mralanorth'>@mralanorth</a>.
+      {{ end }}
     </p>
   </footer>
 
