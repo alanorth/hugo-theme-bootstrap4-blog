@@ -16,7 +16,7 @@ See [my blog](https://picturingjordan.com) for an example of this theme in use.
 - Support Google, Bing, and Yandex site verification via meta tags
 
 ## Usage
-Clone the repository to your site's `themes` directory. Refer to `exampleSite/config.toml` for optional configuration values.
+Clone the repository to your site's `themes` directory. Refer to [`exampleSite/config.toml`](https://github.com/alanorth/hugo-theme-bootstrap4-blog/blob/master/exampleSite/config.toml) for optional configuration values.
 
 ## Building (For Developers)
 This theme uses the [Bootstrap](https://getbootstrap.com/) framework. A static version of this is already included, but if you want to bump the version, tweak the style, etc, you'll need to rebuild the assets. Make sure you have NodeJS v4 or v6 installed, and then run the following from inside the theme's directory:
