@@ -66,3 +66,11 @@ paginate = 5
     #googleplus = true
     #linkedin = true
     #twitter = true
+
+# Default content language for Hugo 0.17's multilingual support (default is "en")
+# See: https://github.com/spf13/hugo/blob/master/docs/content/content/multilingual.md
+#DefaultContentLanguage = "en"
+
+# Languages to render
+#[languages.en]
+#[languages.bg]
