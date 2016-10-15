@@ -1,42 +1,11 @@
-{{ $title := .Title | default .Site.Title }}
-{{ $description := .Params.description | default .Site.Params.description }}
-{{ $author := .Params.author | default .Site.Params.author }}
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     {{ "<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->" | safeHTML }}
 
-    <meta name="description" content="{{ $description }}">
-    <meta name="author" content="{{ $author }}">
-
-    {{ "<!-- OpenGraph Metadata: http://ogp.me/ -->" | safeHTML }}
-    <meta property="og:title" content="{{ $title }}">
-    <meta property="og:description" content="{{ $description }}">
-
-    {{ if eq .Section "post" }}
-    <meta property="og:type" content="article">
-    <meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
-    <meta property="article:author" content="{{ $author }}">
-      {{ if .Params.image }}
-      <meta property="og:image" content="{{ .Params.image | absURL }}">
-      {{ end }}
-    {{ else }}
-    <meta property="og:type" content="blog">
-    {{ end }}
-
-    <meta property="og:url" content="{{ .Permalink }}">
-
-    {{ "<!-- Metadata for Twitter: https://dev.twitter.com/cards/markup -->" | safeHTML }}
-    {{ if and (eq .Section "post") (.Params.image) }}
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:image" content="{{ .Params.image | absURL }}">
-    {{ else }}
-    <meta property="twitter:card" content="summary">
-    {{ end }}
-    {{ if .Site.Params.social.twitter_username}}<meta property="twitter:creator" content="{{ .Site.Params.social.twitter_username }}">{{ end }}
-    <meta property="twitter:title" content="{{ $title }}">
-    <meta property="twitter:description" content="{{ $description }}">
+    {{ template "_internal/opengraph.html" . }}
+    {{ template "_internal/schema.html" . }}
+    {{ template "_internal/twitter_cards.html" . }}
 
     {{ if .Site.Params.google_verify_meta }}
     <meta name="google-site-verification" content="{{ .Site.Params.google_verify_meta }}" />
