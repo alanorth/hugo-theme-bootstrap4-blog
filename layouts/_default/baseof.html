@@ -14,6 +14,8 @@
 
     {{ "<!-- RSS 2.0 feed -->" | safeHTML }}
     <link href="{{ .Site.RSSLink }}" type="application/rss+xml" rel="alternate">
+
+    {{ template "_internal/google_analytics_async.html" . }}
   </head>
 
 <body>
