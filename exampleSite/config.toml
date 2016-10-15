@@ -56,7 +56,7 @@ paginate = 5
   [params.social]
     # Optional, used for attribution in Twitter cards
     # See: https://dev.twitter.com/cards/types/summary-large-image
-    twitter_username = "@username"
+    twitter = "username"
 
   [params.sharingicons]
     # Hide the sharing icons on posts? (Default: false)
