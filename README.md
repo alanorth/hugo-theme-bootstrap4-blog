@@ -1,9 +1,9 @@
 # Hugo Bootstrap v4 Blog
-A simple [Hugo](https://gohugo.io) theme based on the [Bootstrap v4 blog example](http://v4-alpha.getbootstrap.com/examples/blog). Geared towards simple blogging. Still a work in progress.
+A simple [Hugo](https://gohugo.io) theme based on the [Bootstrap v4 blog example](http://v4-alpha.getbootstrap.com/examples/blog). Still a work in progress.
 
 ![Screenshot](/screenshot@2x.png?raw=true "Screenshot")
 
-See [my blog](https://picturingjordan.com) for an example of this theme in use.
+See [picturingjordan.com](https://picturingjordan.com) for an example of this theme in use.
 
 ## Features
 
