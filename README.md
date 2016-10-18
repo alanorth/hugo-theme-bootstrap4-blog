@@ -1,7 +1,7 @@
 # Hugo Bootstrap v4 Blog
 A simple [Hugo](https://gohugo.io) theme based on the [Bootstrap v4 blog example](http://v4-alpha.getbootstrap.com/examples/blog). Still a work in progress.
 
-![Screenshot](/screenshot@2x.png?raw=true "Screenshot")
+![Screenshot](https://raw.githubusercontent.com/alanorth/hugo-theme-bootstrap4-blog/master/screenshot@2x.png "Screenshot")
 
 See [picturingjordan.com](https://picturingjordan.com) for an example of this theme in use.
 
