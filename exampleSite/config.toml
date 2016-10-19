@@ -1,6 +1,6 @@
 # Hugo variables
 # 
-baseurl = "http://replace-this-with-your-hugo-site.com/"
+baseurl = "https://example.org/"
 languageCode = "en-us"
 title = "Hugo Bootstrap v4 Blog"
 theme = "hugo-theme-bootstrap4-blog"
