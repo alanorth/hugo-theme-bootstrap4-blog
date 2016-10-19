@@ -48,9 +48,7 @@
 
       </div> {{ "<!-- /.blog-main -->" | safeHTML }}
 
-      {{ if and (.Site.Params.sidebar) (not .Site.Params.sidebar.hide) }}
-        {{ partial "sidebar.html" . }}
-      {{ end }}
+      {{ partial "sidebar.html" . }}
 
     </div> {{ "<!-- /.row -->" | safeHTML }}
   </div> {{ "<!-- /.container -->" | safeHTML }}
