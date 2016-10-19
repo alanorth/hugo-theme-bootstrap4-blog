@@ -7,12 +7,11 @@ See [picturingjordan.com](https://picturingjordan.com) for an example of this th
 
 ## Features
 
+- Responsive design
 - Uses Bootstrap v4's [native system fonts](http://v4-alpha.getbootstrap.com/content/reboot/#native-font-stack) to load quickly and look good on all platforms
 - Basic [OpenGraph](http://ogp.me) and [Twitter Card](https://dev.twitter.com/cards/types) metadata support
 - robots.txt linking to XML sitemap (disabled by default, see [Hugo docs](https://gohugo.io/extras/robots-txt/))
-- Displays categories and tags from front matter
 - Basic support for [multi-lingual content](https://github.com/spf13/hugo/blob/master/docs/content/content/multilingual.md) (added in Hugo 0.17)
-- Configurable [pagination](https://gohugo.io/extras/pagination/) for posts, categories, and tags pages
 - Support Google, Bing, and Yandex site verification via meta tags
 - Support Google Analytics (async version), see [Hugo docs](https://gohugo.io/extras/analytics/)
 
@@ -30,7 +29,7 @@ $ npm run build
 ## TODO
 
 - add optional social links to sidebar
-- add favicon
+- add favicon (user can place one in static dir, but theme could handle this better for modern devices)
 - add author page (for when you click author name in a post/summary) [#2](https://github.com/alanorth/hugo-theme-bootstrap4-blog/issues/2)
 - add images to sitemap? https://gohugo.io/templates/sitemap/
 - add support for Disqus (I don't use it!)
