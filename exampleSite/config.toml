@@ -44,9 +44,6 @@ paginate = 5
   #yandex_verify_meta = "66b077430f35f04a"
 
   [params.sidebar]
-    # Hide the sidebar? (Default: false)
-    hide = false
-
     # Optional about block for sidebar (can be Markdown)
     about = "A simple Hugo theme based on the [Bootstrap v4 blog example](http://v4-alpha.getbootstrap.com/examples/blog/)."
 
