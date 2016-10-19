@@ -5,6 +5,7 @@
    {{ .Render "summary" }}
   {{ end }}
 
+  {{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }}
   <nav class="blog-pagination">
     {{ if and (.Paginator.HasPrev) (.Paginator.HasNext) }}
     <a class="btn btn-outline-primary" href="{{ .Paginator.Prev.URL }}" role="button">{{ i18n "paginatorPrevious" }}</a>
@@ -19,4 +20,5 @@
     <a class="btn btn-outline-primary" href="{{ .Paginator.Next.URL }}" role="button">{{ i18n "paginatorNext" }}</a>
     {{ end }}
   </nav>
+  {{ end }}
 {{ end }}
