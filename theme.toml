@@ -10,3 +10,7 @@ min_version = 0.17
 [author]
   name = "Alan Orth"
   homepage = "https://englishbulgaria.net"
+
+[original]
+  author = "mdo"
+  homepage = "https://v4-alpha.getbootstrap.com/examples/blog/"
