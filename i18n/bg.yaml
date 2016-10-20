@@ -12,3 +12,9 @@
 
 - id: share
   translation: "Сподели"
+
+- id: paginatorPrevious
+  translation: "Назад"
+
+- id: paginatorNext
+  translation: "Напред"
