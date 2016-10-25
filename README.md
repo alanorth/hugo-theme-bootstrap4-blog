@@ -18,6 +18,16 @@ See [picturingjordan.com](https://picturingjordan.com) for an example of this th
 ## Usage
 Clone the repository to your site's `themes` directory. Refer to [`exampleSite/config.toml`](https://github.com/alanorth/hugo-theme-bootstrap4-blog/blob/master/exampleSite/config.toml) for optional configuration values.
 
+## Content Suggestions
+A few suggestions to help you get a good looking site quickly:
+
+- Keep blog posts in the `content/post` directory, for example: `content/post/my-first-post.md`
+- Keep static pages in the `content` directory, for example: `content/about.md`
+- Keep media like images in the `static` directory, for example: `static/2016/10/screenshot.png`
+- Use the `<!--more-->` tag in posts to control how much of a post is shown on summary pages
+
+See the source code and structure of [picturingjordan.com](https://github.com/alanorth/picturingjordan.com) to get more ideas.
+
 ## Building (For Developers)
 This theme uses the [Bootstrap](https://getbootstrap.com/) framework. A static version of this is already included, but if you want to bump the version, tweak the style, etc, you'll need to rebuild the assets. Make sure you have NodeJS v4 or v6 installed, and then run the following from inside the theme's directory:
 
