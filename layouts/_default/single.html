@@ -23,4 +23,9 @@
           {{ partial "sharing-icons.html" . }}
         {{ end }}
       </article> <!-- /.blog-post -->
+
+  {{ if .Site.DisqusShortname }}
+       {{ partial "disqus.html" . }}
+  {{ end }}
+
 {{ end }}
