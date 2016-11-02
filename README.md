@@ -14,6 +14,7 @@ See [picturingjordan.com](https://picturingjordan.com) for an example of this th
 - Basic support for [multi-lingual content](https://github.com/spf13/hugo/blob/master/docs/content/content/multilingual.md) (added in Hugo 0.17)
 - Supports Google, Bing, and Yandex site verification via meta tags
 - Supports Google Analytics (async version), see [Hugo docs](https://gohugo.io/extras/analytics/)
+- Supports Disqus comments, see [Hugo docs](https://gohugo.io/extras/comments/)
 
 ## Usage
 Clone the repository to your site's `themes` directory. Refer to [`exampleSite/config.toml`](https://github.com/alanorth/hugo-theme-bootstrap4-blog/blob/master/exampleSite/config.toml) for optional configuration values.
@@ -43,7 +44,6 @@ $ npm run build
 - add favicon (user can place one in static dir, but theme could handle this better for modern devices)
 - add author page (for when you click author name in a post/summary) [#2](https://github.com/alanorth/hugo-theme-bootstrap4-blog/issues/2)
 - add images to sitemap? https://gohugo.io/templates/sitemap/
-- add support for Disqus (I don't use it!)
 - test multilingual stuff like menus, probably need more absURL/relURL fixes (see [Hugo docs](https://github.com/spf13/hugo/blob/master/docs/content/content/multilingual.md))
 - make sidebar optional (works, but need to adjust CSS to make main content responsive)
 
