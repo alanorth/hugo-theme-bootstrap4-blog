@@ -16,7 +16,11 @@
     <link href="{{ .Site.RSSLink }}" type="application/rss+xml" rel="alternate">
 
     {{ template "_internal/google_analytics_async.html" . }}
-  </head>
+
+    {{ if .Site.Params.cookie_consent_info_url }}
+      {{ partial "cookie_consent.html" . }}
+    {{ end }}
+</head>
 
 <body>
 
@@ -24,7 +28,7 @@
     <div class="container">
       <nav class="nav blog-nav">
         <a class="nav-link {{ if .IsHome }}active{{ end }}" href="{{ .Site.BaseURL | absLangURL }}">{{ i18n "home" }}</a>
-        {{ range where .Site.Pages "Type" "!=" "post" }}
+        {{ range where .Site.Pages "Type" "==" "page" }}
         <a class="nav-link" href="{{ .Permalink }}">{{ .Title }}</a>
         {{ end }}
       </nav>
