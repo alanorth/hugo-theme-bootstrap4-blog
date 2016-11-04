@@ -1,0 +1,23 @@
+- id: about
+  translation: "Über"
+
+- id: home
+  translation: "Startseite"
+
+- id: recentPosts
+  translation: "Letzte Beiträge"
+
+- id: readMore
+  translation: "Weiterlesen"
+
+- id: translations
+  translation: "Übersetzungen"
+
+- id: share
+  translation: "Teilen"
+
+- id: paginatorPrevious
+  translation: "Vorige Seite"
+
+- id: paginatorNext
+  translation: "Nächste Seite"
