@@ -1,5 +1,19 @@
-<script type="text/javascript">
-    window.cookieconsent_options = {{ dict "message" "This website uses cookies." "dismiss" "Got it!" "learnMore" "More info" "link" (.Site.Params.cookie_consent_info_url | absURL)  "theme" "dark-top" | jsonify | safeJS }};
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.2/cookieconsent.min.css" />
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.2/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#edeff5",
+      "text": "#838391"
+    },
+    "button": {
+      "background": "#4b81e8"
+    }
+  },
+  "theme": "classic",
+  "position": "top",
+"content": {{ dict "message" "This website uses cookies." "href" (.Site.Params.cookie_consent_info_url | absURL) | jsonify | safeJS }}
+})});
 </script>
-
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.10/cookieconsent.min.js"></script>
