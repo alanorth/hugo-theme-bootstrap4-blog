@@ -12,8 +12,11 @@
     {{ "<!-- combined, minified CSS -->" | safeHTML }}
     <link href="{{ .Site.BaseURL }}css/style.css" rel="stylesheet">
 
+    {{ if .RSSlink }}
     {{ "<!-- RSS 2.0 feed -->" | safeHTML }}
-    <link href="{{ .Site.RSSLink }}" type="application/rss+xml" rel="alternate">
+    <link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+    <link href="{{ .RSSlink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
+    {{ end }}
 
     {{ template "_internal/google_analytics_async.html" . }}
   </head>

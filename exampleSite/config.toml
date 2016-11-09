@@ -9,6 +9,7 @@ paginate = 5
 # optionally override the site's footer with custom copyright text
 # copyright = "Except where otherwise noted, content on this site is licensed under a [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/)."
 #googleAnalytics = "UA-123-45"
+#disqusShortname = "XYW"
 
 [permalinks]
   post = "/:year/:month/:title/"
