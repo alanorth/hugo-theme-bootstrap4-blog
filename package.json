@@ -17,6 +17,7 @@
   "license": "GPL-3.0",
   "devDependencies": {
     "bootstrap": "~4.0.0-alpha.5",
+    "cookieconsent": "^3.0.1",
     "cssnano-cli": "^1.0.5",
     "font-awesome": "^4.7.0",
     "node-sass": "latest"
