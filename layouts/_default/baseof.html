@@ -19,7 +19,11 @@
     {{ end }}
 
     {{ template "_internal/google_analytics_async.html" . }}
-  </head>
+
+    {{ if .Site.Params.cookie_consent_info_url }}
+      {{ partial "cookie_consent.html" . }}
+    {{ end }}
+</head>
 
 <body>
 

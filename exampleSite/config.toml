@@ -44,6 +44,12 @@ paginate = 5
   # verification string for Yandex Webmaster Tools
   #yandex_verify_meta = "66b077430f35f04a"
 
+  # Cookie consent (may be required for your site in the European Union)
+  # Set the "more info" URL in this parameter. You have to
+  # provide a document page for this URL if you don't use an external URL -
+  #  see the example website
+  # cookie_consent_info_url = "/cookie-information/"
+
   [params.sidebar]
     # Optional about block for sidebar (can be Markdown)
     about = "A simple Hugo theme based on the [Bootstrap v4 blog example](http://v4-alpha.getbootstrap.com/examples/blog/)."
