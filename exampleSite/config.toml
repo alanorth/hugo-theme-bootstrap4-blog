@@ -44,6 +44,13 @@ paginate = 5
   # verification string for Yandex Webmaster Tools
   #yandex_verify_meta = "66b077430f35f04a"
 
+  # Optionally display a message about the site's use of cookies, which may be
+  # required for your site in the European Union. Set the parameter below to a
+  # page where the user can get more information about cookies, either on your
+  # site or externally, for example:
+  #cookie_consent_info_url = "/cookie-information/"
+  #cookie_consent_info_url = "http://cookiesandyou.com"
+
   [params.sidebar]
     # Optional about block for sidebar (can be Markdown)
     about = "A simple Hugo theme based on the [Bootstrap v4 blog example](http://v4-alpha.getbootstrap.com/examples/blog/)."
