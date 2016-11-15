@@ -21,3 +21,12 @@
 
 - id: paginatorNext
   translation: "Nächste Seite"
+
+- id: cookieMessage
+  translation: "Diese Webseite benutzt Cookies."
+
+- id: cookieLink
+  translation: "Weitere Informationen"
+
+- id: cookieDismiss
+  translation: "OK"
