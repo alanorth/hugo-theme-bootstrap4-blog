@@ -49,7 +49,6 @@ There are several ways to help with the development of the theme:
 
 - add optional social links to sidebar
 - add favicon (user can place one in static dir, but theme could handle this better for modern devices)
-- add author page (for when you click author name in a post/summary) [#2](https://github.com/alanorth/hugo-theme-bootstrap4-blog/issues/2)
 - add images to sitemap? https://gohugo.io/templates/sitemap/
 - test multilingual stuff like menus, probably need more absURL/relURL fixes (see [Hugo docs](https://github.com/spf13/hugo/blob/master/docs/content/content/multilingual.md))
 - make sidebar optional (works, but need to adjust CSS to make main content responsive)
