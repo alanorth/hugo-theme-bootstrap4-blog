@@ -39,6 +39,12 @@ $ npm install
 $ npm run build
 ```
 
+## Contributing
+There are several ways to help with the development of the theme:
+
+- [Open an issue](https://github.com/alanorth/hugo-theme-bootstrap4-blog/issues/new) on GitHub if you have problems or feature requests
+- Fork [the repository](https://github.com/alanorth/hugo-theme-bootstrap4-blog) on GitHub, add features on a "feature" branch like `update-bootstrap`, and then send a [pull request](https://github.com/alanorth/hugo-theme-bootstrap4-blog/compare) with your changes
+
 ## TODO
 
 - add optional social links to sidebar
