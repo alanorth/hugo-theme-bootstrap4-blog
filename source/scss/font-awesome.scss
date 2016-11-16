@@ -1,0 +1,26 @@
+/*!
+ *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+
+@import "node_modules/font-awesome/scss/variables";
+@import "node_modules/font-awesome/scss/mixins";
+@import "node_modules/font-awesome/scss/path";
+@import "node_modules/font-awesome/scss/core";
+@import "node_modules/font-awesome/scss/larger";
+@import "node_modules/font-awesome/scss/fixed-width";
+//@import "list";
+//@import "bordered-pulled";
+//@import "animated";
+//@import "rotated-flipped";
+//@import "stacked";
+//@import "icons";
+// selectively import icons we need from font-awesome
+// see: node_modules/font-awesome/scss/_icons.scss
+.#{$fa-css-prefix}-tag:before { content: $fa-var-tag; }
+.#{$fa-css-prefix}-folder:before { content: $fa-var-folder; }
+.#{$fa-css-prefix}-facebook:before { content: $fa-var-facebook; }
+.#{$fa-css-prefix}-google-plus:before { content: $fa-var-google-plus; }
+.#{$fa-css-prefix}-linkedin:before { content: $fa-var-linkedin; }
+.#{$fa-css-prefix}-twitter:before { content: $fa-var-twitter; }
+@import "node_modules/font-awesome/scss/screen-reader";
