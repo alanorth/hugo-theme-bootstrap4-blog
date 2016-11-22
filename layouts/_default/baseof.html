@@ -23,6 +23,8 @@
     {{ if .Site.Params.cookie_consent_info_url }}
     {{ partial "cookie-consent.html" . }}
     {{ end }}
+
+    {{ partial "head-custom.html" . }}
   </head>
 
 <body>
