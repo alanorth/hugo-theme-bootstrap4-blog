@@ -5,4 +5,4 @@
             <i class="fa fa-tag" aria-hidden="true"></i>&nbsp;{{ range $index, $tag := .Params.tags }}{{ if gt $index 0 }}, {{ end }}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" rel="tag">{{ . }}</a>{{ end }}
 {{ end }}
 
-{{- /* vim: ts=2 sw=2 et: */}}
+{{- /* vim: set ts=2 sw=2 et: */}}
