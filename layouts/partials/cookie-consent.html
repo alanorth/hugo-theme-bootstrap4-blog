@@ -3,24 +3,24 @@
 
 <script>
 window.addEventListener("load", function(){
-window.cookieconsent.initialise({
-  "palette": {
-    "popup": {
-      "background": "#428bca",
-      "text": "#ffffff"
+  window.cookieconsent.initialise({
+    "palette": {
+      "popup": {
+        "background": "#428bca",
+        "text": "#ffffff"
+      },
+      "button": {
+        "background": "#f71559"
+      }
     },
-    "button": {
-      "background": "#f71559"
-    }
-  },
-  "content": {
-    "message": '{{ i18n "cookieMessage" }}',
-    "dismiss": '{{ i18n "cookieDismiss" }}',
-    "link": '{{ i18n "cookieLink" }}',
-    "href": "{{ .Site.Params.cookie_consent_info_url | absURL}}"
-  },
-  "position": "bottom-right"
-})});
+    "content": {
+      "message": '{{ i18n "cookieMessage" }}',
+      "dismiss": '{{ i18n "cookieDismiss" }}',
+      "link": '{{ i18n "cookieLink" }}',
+      "href": "{{ .Site.Params.cookie_consent_info_url | absURL}}"
+    },
+    "position": "bottom-right"
+  })});
 </script>
 
 {{- /* vim: set ts=2 sw=2 et: */}}
