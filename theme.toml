@@ -14,3 +14,5 @@ min_version = 0.17
 [original]
   author = "mdo"
   homepage = "https://v4-alpha.getbootstrap.com/examples/blog/"
+
+# vim: ts=2 sw=2 et

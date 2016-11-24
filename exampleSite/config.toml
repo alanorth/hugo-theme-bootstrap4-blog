@@ -97,3 +97,5 @@ paginate = 5
 # Languages to render
 #[languages.en]
 #[languages.bg]
+
+# vim: ts=2 sw=2 et
