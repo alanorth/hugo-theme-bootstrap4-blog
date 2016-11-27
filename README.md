@@ -16,6 +16,7 @@ See [picturingjordan.com](https://picturingjordan.com) for an example of this th
 - Supports Google Analytics (async version), see [Hugo docs](https://gohugo.io/extras/analytics/)
 - Supports Disqus comments, see [Hugo docs](https://gohugo.io/extras/comments/)
 - Can show a message about cookie usage to the user, see [`exampleSite/config.toml`](https://github.com/alanorth/hugo-theme-bootstrap4-blog/blob/master/exampleSite/config.toml)
+- Allow addition of custom `<head>` code in site's `layouts/partial/head-custom.html` (see [#17](https://github.com/alanorth/hugo-theme-bootstrap4-blog/pull/17))
 
 ## Usage
 Clone the repository to your site's `themes` directory. Refer to [`exampleSite/config.toml`](https://github.com/alanorth/hugo-theme-bootstrap4-blog/blob/master/exampleSite/config.toml) for optional configuration values.
