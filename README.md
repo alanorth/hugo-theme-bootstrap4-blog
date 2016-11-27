@@ -43,15 +43,8 @@ $ npm run build
 There are several ways to help with the development of the theme:
 
 - [Open an issue](https://github.com/alanorth/hugo-theme-bootstrap4-blog/issues/new) on GitHub if you have problems or feature requests
+- Alternatively, tackle one of the [existing issues](https://github.com/alanorth/hugo-theme-bootstrap4-blog/issues) on the issue tracker
 - Fork [the repository](https://github.com/alanorth/hugo-theme-bootstrap4-blog) on GitHub, add features on a "feature" branch like `update-bootstrap`, and then send a [pull request](https://github.com/alanorth/hugo-theme-bootstrap4-blog/compare) with your changes
-
-## TODO
-
-- add optional social links to sidebar
-- add favicon (user can place one in static dir, but theme could handle this better for modern devices)
-- add images to sitemap? https://gohugo.io/templates/sitemap/
-- test multilingual stuff like menus, probably need more absURL/relURL fixes (see [Hugo docs](https://github.com/spf13/hugo/blob/master/docs/content/content/multilingual.md))
-- make sidebar optional (works, but need to adjust CSS to make main content responsive)
 
 ## License
 This repository contains the code of [Bootstrap](http://getbootstrap.com), which is licensed under the [MIT license](https://tldrlegal.com/license/mit-license), and [Font Awesome](http://fontawesome.io/), which uses [various licenses](http://fontawesome.io/license/).
