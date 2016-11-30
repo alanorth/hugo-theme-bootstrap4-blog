@@ -1,0 +1,32 @@
+- id: about
+  translation: "Sobre"
+
+- id: home
+  translation: "Home"
+
+- id: recentPosts
+  translation: "Post Recents"
+
+- id: readMore
+  translation: "Leia Mais →"
+
+- id: translations
+  translation: "Traduções"
+
+- id: share
+  translation: "Compartilhe"
+
+- id: paginatorPrevious
+  translation: "Página anterior"
+
+- id: paginatorNext
+  translation: "Próxima página"
+
+- id: cookieMessage
+  translation: "Este site usa coockies."
+
+- id: cookieLink
+  translation: "Saiba mais."
+
+- id: cookieDismiss
+  translation: "Ok!"
