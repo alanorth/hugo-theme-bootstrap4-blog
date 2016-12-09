@@ -33,3 +33,6 @@
 
 - id: backToTop
   translation: "Haut de la page"
+
+- id: links
+  translation: "Liens"
