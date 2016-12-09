@@ -30,3 +30,6 @@
 
 - id: cookieDismiss
   translation: "J'ai compris !"
+
+- id: backToTop
+  translation: "Haut de la page"
