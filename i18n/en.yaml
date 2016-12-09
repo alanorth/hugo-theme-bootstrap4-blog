@@ -33,3 +33,6 @@
 
 - id: backToTop
   translation: "Back to top"
+
+- id: links
+  translation: "Links"
