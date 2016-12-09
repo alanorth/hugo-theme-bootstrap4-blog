@@ -19,7 +19,7 @@
 
   {{ with .Site.Menus.sidebar }}
   <section class="sidebar-module">
-    <h4>Links</h4>
+    <h4>{{ i18n "links" }}</h4>
     <ol class="list-unstyled">
       {{ range . }}
       <li><a href="{{ .URL | absURL }}">{{ .Name }}</a></li>
