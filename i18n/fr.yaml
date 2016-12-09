@@ -1,0 +1,38 @@
+- id: about
+  translation: "À propos"
+
+- id: home
+  translation: "Accueil"
+
+- id: recentPosts
+  translation: "Derniers billets"
+
+- id: readMore
+  translation: "Lire la suite →"
+
+- id: translations
+  translation: "Traductions"
+
+- id: share
+  translation: "Partager"
+
+- id: paginatorPrevious
+  translation: "Page précédente"
+
+- id: paginatorNext
+  translation: "Page suivante"
+
+- id: cookieMessage
+  translation: "Ce site web utilise des cookies"
+
+- id: cookieLink
+  translation: "En savoir plus."
+
+- id: cookieDismiss
+  translation: "J'ai compris !"
+
+- id: backToTop
+  translation: "Haut de la page"
+
+- id: links
+  translation: "Liens"
