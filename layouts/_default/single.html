@@ -24,7 +24,7 @@
   {{ end }}
 </article> <!-- /.blog-post -->
 
-{{ if .Site.DisqusShortname }}
+{{ if and (.Site.DisqusShortname) (ne .Params.comments false) }}
 {{ partial "disqus.html" . }}
 {{ end }}
 
