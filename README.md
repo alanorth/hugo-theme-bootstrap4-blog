@@ -29,6 +29,7 @@ A few suggestions to help you get a good looking site quickly:
 - Keep media like images in the `static` directory, for example: `static/2016/10/screenshot.png`
 - If you want an image to be shown when you share a post on social media, specify at least one image in the post's front matter, for example: `images: ["/2016/10/screenshot.png"]`
 - Use the `<!--more-->` tag in posts to control how much of a post is shown on summary pages
+- Disable comments on a post by setting `comments = false` in its frontmatter
 
 See the source code and structure of [picturingjordan.com](https://github.com/alanorth/picturingjordan.com) to get more ideas.
 
