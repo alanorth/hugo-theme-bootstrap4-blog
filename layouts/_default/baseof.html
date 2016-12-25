@@ -38,7 +38,7 @@
           <a class="nav-link" href="{{.URL | absURL }}">{{ .Name }}</a>
           {{ end }}
           {{ else }}
-          {{ range where .Site.Pages "Type" "!=" "post" }}
+          {{ range where .Site.RegularPages "Type" "!=" "post" }}
           <a class="nav-link" href="{{ .Permalink }}">{{ .Title }}</a>
           {{ end }}
           {{ end }}
