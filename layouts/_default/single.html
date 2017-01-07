@@ -19,14 +19,22 @@
     {{ end }}
   </ul>
   {{ end }}
+
+  {{ if or (not .Site.Params.sharingicons.hide) (.Site.DisqusShortname) }}
+  <hr>
+  <footer>
+
   {{ if not .Site.Params.sharingicons.hide }}
   {{ partial "sharing-icons.html" . }}
   {{ end }}
-</article> <!-- /.blog-post -->
 
-{{ if and (.Site.DisqusShortname) (ne .Params.comments false) }}
-{{ partial "disqus.html" . }}
-{{ end }}
+  {{ if and (.Site.DisqusShortname) (ne .Params.comments false) }}
+  {{ partial "disqus.html" . }}
+  {{ end }}
+  </footer>
+  {{ end }}
+
+</article> <!-- /.blog-post -->
 
 {{ end }}
 
