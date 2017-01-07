@@ -1,14 +1,14 @@
 /*!
- * Bootstrap v4.0.0-alpha.5 (https://getbootstrap.com)
- * Copyright 2011-2016 The Bootstrap Authors
- * Copyright 2011-2016 Twitter, Inc.
+ * Bootstrap v4.0.0-alpha.6 (https://getbootstrap.com)
+ * Copyright 2011-2017 The Bootstrap Authors
+ * Copyright 2011-2017 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
 // Core variables and mixins
-@import "node_modules/bootstrap/scss/custom";
 @import "node_modules/bootstrap/scss/variables";
 @import "node_modules/bootstrap/scss/mixins";
+@import "node_modules/bootstrap/scss/custom";
 
 // Reset and dependencies
 @import "node_modules/bootstrap/scss/normalize";
@@ -25,7 +25,7 @@
 @import "node_modules/bootstrap/scss/buttons";
 
 // Components
-//@import "node_modules/bootstrap/scss/animation";
+//@import "node_modules/bootstrap/scss/transitions";
 //@import "node_modules/bootstrap/scss/dropdown";
 //@import "node_modules/bootstrap/scss/button-group";
 //@import "node_modules/bootstrap/scss/input-group";
@@ -35,7 +35,7 @@
 //@import "node_modules/bootstrap/scss/card";
 //@import "node_modules/bootstrap/scss/breadcrumb";
 @import "node_modules/bootstrap/scss/pagination";
-//@import "node_modules/bootstrap/scss/tags";
+//@import "node_modules/bootstrap/scss/badge";
 //@import "node_modules/bootstrap/scss/jumbotron";
 //@import "node_modules/bootstrap/scss/alert";
 //@import "node_modules/bootstrap/scss/progress";
