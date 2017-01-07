@@ -160,6 +160,11 @@ article img {
   height: auto;
   margin: 13px auto;
 }
+/* add a margin above the disqus comments only if the preceeding sharing section
+is present (because sharing can be hidden, and the margin isn't always needed */
+section + #disqus_thread {
+  margin-top: 1rem;
+}
 
 /*
  * Footer
