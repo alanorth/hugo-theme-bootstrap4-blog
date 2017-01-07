@@ -1,7 +1,3 @@
-// ie9 is minimum supported by Bootstrap v4 and it doesn't support flexbox
-$enable-flex:               false;
-$enable-grid-classes:       true;
-
 // optional: import local styles first
 @import 'source/scss/main';
 
