@@ -7,7 +7,7 @@
     "url": "https://github.com/alanorth/hugo-theme-bootstrap4-blog.git"
   },
   "scripts": {
-    "build:css": "node-sass --output-style compressed source/scss/style.scss static/css/style.css.tmp && cssnano static/css/style.css.tmp static/css/style.css",
+    "build:css": "node-sass --output-style compressed source/scss/style.scss static/css/style.css.tmp && cleancss static/css/style.css.tmp -o static/css/style.css",
     "build:fonts": "cp node_modules/font-awesome/fonts/* static/fonts",
     "build:cookieconsent": "cp node_modules/cookieconsent/build/cookieconsent.min.css static/css && cp node_modules/cookieconsent/build/cookieconsent.min.js static/js",
     "build": "npm run build:css && npm run build:fonts && npm run build:cookieconsent && npm run clean",
@@ -18,6 +18,7 @@
   "license": "GPL-3.0",
   "devDependencies": {
     "bootstrap": "4.0.0-alpha.5",
+    "clean-css": "^3.4.23",
     "cookieconsent": "^3.0.4",
     "cssnano-cli": "^1.0.5",
     "font-awesome": "^4.7.0",
