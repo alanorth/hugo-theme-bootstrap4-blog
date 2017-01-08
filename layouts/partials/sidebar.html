@@ -1,11 +1,12 @@
 <aside class="col-sm-3 offset-sm-1 blog-sidebar">
-  {{ if isset .Site.Params.sidebar "about" }}
+  {{ if and (.Site.Params.sidebar) (isset .Site.Params.sidebar "about") }}
   <section class="sidebar-module sidebar-module-inset">
     <h4>{{ i18n "about" }}</h4>
     <p>{{ .Site.Params.sidebar.about | markdownify }}</p>
   </section>
   {{ end }}
 
+  {{ if .Site.Params.sidebar }}
   {{ $num_recent_posts := (index .Site.Params.sidebar "num_recent_posts" | default 5) }}
 
   <section class="sidebar-module">
@@ -16,6 +17,8 @@
       {{ end }}
     </ol>
   </section>
+
+  {{ end }}
 
   {{ with .Site.Menus.sidebar }}
   <section class="sidebar-module">
