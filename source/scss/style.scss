@@ -1,6 +1,3 @@
-// optional: import local styles first
-@import 'source/scss/main';
-
 // selectively import components we need from font-awesome
 // see: node_modules/font-awesome/scss/font-awesome.scss
 @import 'source/scss/font-awesome';
@@ -8,3 +5,6 @@
 // selectively import components we need from bootstrap
 // see: node_modules/bootstrap/scss/bootstrap.scss
 @import 'source/scss/bootstrap';
+
+// local style overrides
+@import 'source/scss/main';
