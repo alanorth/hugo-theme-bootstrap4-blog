@@ -18,3 +18,5 @@
 
 - id: paginatorNext
   translation: "Напред"
+- id: links
+  translation: "Линкове"
