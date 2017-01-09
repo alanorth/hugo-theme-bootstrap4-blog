@@ -160,6 +160,10 @@ article img {
   height: auto;
   margin: 13px auto;
 }
+// add margin to sharing icons (except the first one)
+.sharing-icons .nav-item+.nav-item {
+  margin-left: 1rem;
+}
 /* add a margin above the disqus comments only if the preceeding sharing section
 is present (because sharing can be hidden, and the margin isn't always needed */
 section + #disqus_thread {
