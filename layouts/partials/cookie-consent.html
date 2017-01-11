@@ -1,5 +1,5 @@
-<link href="{{ .Site.BaseURL }}css/cookieconsent.min.css" rel="stylesheet" type="text/css">
-<script src="{{ .Site.BaseURL }}js/cookieconsent.min.js" async></script>
+<link href="{{ .Site.BaseURL }}css/cookieconsent.min.css" rel="stylesheet" type="text/css" integrity="{{ .Site.Data.sri.cookieconsentcss }}" crossorigin="anonymous">
+<script src="{{ .Site.BaseURL }}js/cookieconsent.min.js" integrity="{{ .Site.Data.sri.cookieconsentjs }}" crossorigin="anonymous" async></script>
 
 <script>
 window.addEventListener("load", function(){
