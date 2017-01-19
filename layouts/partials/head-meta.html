@@ -5,18 +5,18 @@
 {{ template "_internal/schema.html" . }}
 {{ template "_internal/twitter_cards.html" . }}
 
-{{ with .Site.Params.google_verify_meta }}
+{{- with .Site.Params.google_verify_meta -}}
 <meta name="google-site-verification" content="{{ . }}" />
 {{ end }}
 
-{{ with .Site.Params.bing_verify_meta }}
+{{- with .Site.Params.bing_verify_meta -}}
 <meta name="msvalidate.01" content="{{ . }}" />
 {{ end }}
 
-{{ with .Site.Params.yandex_verify_meta }}
+{{- with .Site.Params.yandex_verify_meta -}}
 <meta name="yandex-verification" content="{{ . }}" />
 {{ end }}
 
-{{ .Hugo.Generator }}
+{{- .Hugo.Generator -}}
 
 {{- /* vim: set ts=2 sw=2 et: */}}
