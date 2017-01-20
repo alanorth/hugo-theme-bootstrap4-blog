@@ -1,3 +1,28 @@
+{{ define "schema-dot-org" }}
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Blog",
+  {{/* Google recommends the headline be no more than 110 characters */}}
+  "headline": {{ substr .Site.Title 0 110 }},
+  "url" : {{ printf "%s" .Permalink }},
+  "author": {
+    "@type": "Person",
+    "name": {{ .Site.Params.author }}
+  },
+  {{ with .Site.Social.GooglePlus }}
+  "publisher": {{ printf "%s" . }},
+  {{ end }}
+  {{/* all of the site's categories/tags, from Hugo's tpl/template_embedded.go */}}
+  "keywords": "{{ range $plural, $terms := .Site.Taxonomies }}{{ range $term, $val := $terms }}{{ printf "%s," $term }}{{ end }}{{ end }}"
+  {{ with .Site.Params.description }}
+  ,
+  "description": {{- . -}}
+  {{ end }}
+}
+</script>
+{{ end }}
+
 {{ define "main" }}
 
 {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
