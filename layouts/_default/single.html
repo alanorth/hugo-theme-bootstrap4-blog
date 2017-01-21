@@ -66,11 +66,11 @@
   </ul>
   {{ end }}
 
-  {{ if or (not .Site.Params.sharingicons.hide) (.Site.DisqusShortname) }}
+  {{ if or (ne ($.Param "sharingicons") false) (.Site.DisqusShortname) }}
   <hr>
   <footer>
 
-  {{ if not .Site.Params.sharingicons.hide }}
+  {{ if (ne ($.Param "sharingicons") false) }}
   {{ partial "sharing-icons.html" . }}
   {{ end }}
 
