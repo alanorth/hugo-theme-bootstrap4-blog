@@ -68,6 +68,9 @@ paginate = 5
   # or by specifying menu entries in a similar way to the sidebar menu above.
   #custom_navbar = true
 
+  # show sharing icons on pages/posts (default: true)
+  #sharingicons = true
+
   [params.sidebar]
     # Optional about block for sidebar (can be Markdown)
     about = "A simple Hugo theme based on the [Bootstrap v4 blog example](http://v4-alpha.getbootstrap.com/examples/blog/)."
@@ -79,16 +82,6 @@ paginate = 5
     # Optional, used for attribution in Twitter cards
     # See: https://dev.twitter.com/cards/types/summary-large-image
     twitter = "username"
-
-  [params.sharingicons]
-    # Hide the sharing icons on posts? (Default: false)
-    hide = false
-
-    # Optionally, set any of these to false to hide them:
-    #facebook = true
-    #googleplus = true
-    #linkedin = true
-    #twitter = true
 
 # Default content language for Hugo 0.17's multilingual support (default is "en")
 # See: https://github.com/spf13/hugo/blob/master/docs/content/content/multilingual.md
