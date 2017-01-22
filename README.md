@@ -30,6 +30,7 @@ A few suggestions to help you get a good looking site quickly:
 - If you want an image to be shown when you share a post on social media, specify at least one image in the post's front matter, for example: `images: ["/2016/10/screenshot.png"]`
 - Use the `<!--more-->` tag in posts to control how much of a post is shown on summary pages
 - Disable comments on a post by setting `comments = false` in its frontmatter
+- Disable social sharing icons site wide (or on individual pages/posts) by setting `sharingicons = false`
 
 See the source code and structure of [picturingjordan.com](https://github.com/alanorth/picturingjordan.com) to get more ideas.
 
