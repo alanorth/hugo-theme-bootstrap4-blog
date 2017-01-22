@@ -10,6 +10,10 @@
     "@type": "Person",
     "name": {{ .Site.Params.author }}
   },
+  {{ $ISO8601 := "2006-01-02T15:04:05-07:00" }}
+  {{ if not .Date.IsZero }}
+  "dateModified": {{ .Date.Format $ISO8601 }},
+  {{ end }}
   {{ with .Site.Social.GooglePlus }}
   "publisher": {{ printf "%s" . }},
   {{ end }}
