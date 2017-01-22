@@ -1,3 +1,24 @@
+<!--
+ Import of internal opengraph template from Hugo's `tpl/template_embedded.go`
+ until site authors and social metadata can be standardized[0]. Meanwhile, I
+ wanted to work on better usage of Twitter and Facebook OpenGraph tags[1][2].
+
+ First, because the .Site.Authors wiring doesn't work yet, several date-related
+ tags never get used, and also to correct the logic on these tags:
+   - All nodes/pages should use this metadata (it currently depends on .Site.Authors and .Social.Facebook)
+   - Published time should be flexible and use EITHER publishdate or date from frontmatter
+   - Modified time should use .Lastmod, which can use enableGitInfo and falls back seamlessly to .Date
+   - Nodes should use type "website" and og:updated_time
+   - Pages should use type "article" and article:modified_time
+
+ Several Twitter-related fields are incorrectly used:
+   - Site-specific Twitter account
+   - User-specific Twitter account
+
+ [0]: https://discuss.gohugo.io/t/how-to-configure-and-use-site-author/3682
+ [1]: https://dev.twitter.com/cards/markup
+ [2]: https://developers.facebook.com/docs/reference/opengraph/object-type/website/
+-->
 <meta property="og:title" content="{{ .Title }}" />
 <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}" />
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
@@ -7,7 +28,8 @@
 {{ end }}{{ end }}
 
 {{ if .IsPage }}
-{{ if not .Date.IsZero }}<meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }}"/>{{ end }}
+{{ if not .PublishDate.IsZero }}<meta property="article:published_time" content="{{ .PublishDate.Format "2006-01-02T15:04:05-07:00" | safeHTML }}"/>
+{{ else if not .Date.IsZero }}<meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }}"/>{{ end }}
 {{ if not .Lastmod.IsZero }}<meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05-07:00" | safeHTML }}"/>{{ end }}
 {{ else }}
 {{ if not .Site.LastChange.IsZero }}<meta property="og:updated_time" content="{{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }}"/>{{ end }}
@@ -33,8 +55,6 @@
 {{ range .Site.Authors }}{{ with .Social.facebook }}
 <meta property="article:author" content="https://www.facebook.com/{{ . }}" />{{ end }}{{ with .Site.Social.facebook }}
 <meta property="article:publisher" content="https://www.facebook.com/{{ . }}" />{{ end }}
-<meta property="article:published_time" content="{{ .PublishDate }}" />
-<meta property="article:modified_time" content="{{ .Date }}" />
 <meta property="article:section" content="{{ .Section }}" />
 {{ with .Params.tags }}{{ range first 6 . }}
   <meta property="article:tag" content="{{ . }}" />{{ end }}{{ end }}
