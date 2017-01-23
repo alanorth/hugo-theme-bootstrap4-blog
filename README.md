@@ -31,6 +31,7 @@ A few suggestions to help you get a good looking site quickly:
 - Use the `<!--more-->` tag in posts to control how much of a post is shown on summary pages
 - Disable comments on a post by setting `comments = false` in its frontmatter
 - Disable social sharing icons site wide (or on individual pages/posts) by setting `sharingicons = false`
+- If your content is stored in git, add `enableGitInfo = true` to your site config and Hugo will use git history to set a more accurate modification date in page metadata
 
 See the source code and structure of [picturingjordan.com](https://github.com/alanorth/picturingjordan.com) to get more ideas.
 
