@@ -79,7 +79,8 @@ paginate = 5
     #num_recent_posts = 2
 
   [params.social]
-    # Optional, used for attribution in Twitter cards
+    # Optional, used for attribution in Twitter cards (ideally not a person
+    # for example: nytimes, flickr, NatGeo, etc).
     # See: https://dev.twitter.com/cards/types/summary-large-image
     twitter = "username"
 
