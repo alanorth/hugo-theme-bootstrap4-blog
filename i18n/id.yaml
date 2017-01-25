@@ -1,0 +1,38 @@
+- id: about
+  translation: "Tentang"
+
+- id: home
+  translation: "Beranda"
+
+- id: recentPosts
+  translation: "Artikel Terbaru"
+
+- id: readMore
+  translation: "Baca Selengkapnya →"
+
+- id: translations
+  translation: "Terjemahan"
+
+- id: share
+  translation: "Bagikan"
+
+- id: paginatorPrevious
+  translation: "Sebelumnya"
+
+- id: paginatorNext
+  translation: "Selanjutnya"
+
+- id: cookieMessage
+  translation: "Web ini menggunakan cookies."
+
+- id: cookieLink
+  translation: "Pelajari"
+
+- id: cookieDismiss
+  translation: "Paham!"
+
+- id: backToTop
+  translation: "Ke Atas"
+
+- id: links
+  translation: "Tautan"
