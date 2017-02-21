@@ -6,30 +6,30 @@
   "@context": "http://schema.org",
   "@type": "BlogPosting",
   {{/* Google recommends the headline be no more than 110 characters */}}
-  "headline": {{ substr .Title 0 110 }},
+  "headline": "{{ substr .Title 0 110 }}",
   {{- with .Params.images -}}{{ range first 1 . }}
   "image": {
     "@type": "ImageObject",
-    "url": {{ . | absURL }}
+    "url": "{{ . | absURL }}"
   },
   {{- end -}}{{ end }}
-  "url": {{ printf "%s" .Permalink }},
+  "url": "{{ printf "%s" .Permalink }}",
   "wordCount": "{{ .WordCount }}",
   {{ $ISO8601 := "2006-01-02T15:04:05-07:00" }}
   {{ if not .PublishDate.IsZero }}
-  "datePublished": {{ .PublishDate.Format $ISO8601 }},
+  "datePublished": "{{ .PublishDate.Format $ISO8601 }}",
   {{ else }}
-  "datePublished": {{ .Date.Format $ISO8601 }},
+  "datePublished": "{{ .Date.Format $ISO8601 }}",
   {{ end }}
   {{ if not .Lastmod.IsZero }}
-  "dateModified": {{ .Lastmod.Format $ISO8601 }},
+  "dateModified": "{{ .Lastmod.Format $ISO8601 }}",
   {{ end }}
   {{ with .Site.Social.GooglePlus }}
-  "publisher": {{ printf "%s" . }},
+  "publisher": "{{ printf "%s" . }}",
   {{ end }}
   "author": {
     "@type": "Person",
-    "name": {{ .Params.author | default .Site.Params.author }}
+    "name": "{{ .Params.author | default .Site.Params.author }}"
   }
   {{ if or (.Params.categories) (.Params.tags) }}
   ,
@@ -38,7 +38,7 @@
 
   {{- with .Params.description -}}
   ,
-  "description": {{ . }}
+  "description": "{{ . }}"
   {{ end }}
 }
 </script>

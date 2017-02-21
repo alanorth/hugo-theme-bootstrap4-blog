@@ -4,24 +4,24 @@
   "@context": "http://schema.org",
   "@type": "Blog",
   {{/* Google recommends the headline be no more than 110 characters */}}
-  "headline": {{ substr .Site.Title 0 110 }},
-  "url" : {{ printf "%s" .Permalink }},
+  "headline": "{{ substr .Site.Title 0 110 }}",
+  "url" : "{{ printf "%s" .Permalink }}",
   "author": {
     "@type": "Person",
-    "name": {{ .Site.Params.author }}
+    "name": "{{ .Site.Params.author }}"
   },
   {{ $ISO8601 := "2006-01-02T15:04:05-07:00" }}
   {{ if not .Date.IsZero }}
-  "dateModified": {{ .Date.Format $ISO8601 }},
+  "dateModified": "{{ .Date.Format $ISO8601 }}",
   {{ end }}
   {{ with .Site.Social.GooglePlus }}
-  "publisher": {{ printf "%s" . }},
+  "publisher": "{{ printf "%s" . }}",
   {{ end }}
   {{/* all of the site's categories/tags, from Hugo's tpl/template_embedded.go */}}
   "keywords": "{{ range $plural, $terms := .Site.Taxonomies }}{{ range $term, $val := $terms }}{{ printf "%s," $term }}{{ end }}{{ end }}"
   {{ with .Site.Params.description }}
   ,
-  "description": {{- . -}}
+  "description": "{{- . -}}"
   {{ end }}
 }
 </script>
