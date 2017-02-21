@@ -5,7 +5,7 @@ description = "A simple Hugo theme based on the Bootstrap v4 blog example."
 homepage = "https://github.com/alanorth/hugo-theme-bootstrap4"
 tags = ["bootstrap", "blog", "fontawesome"]
 features = ["responsive", "blog"]
-min_version = 0.18
+min_version = 0.19
 
 [author]
   name = "Alan Orth"
