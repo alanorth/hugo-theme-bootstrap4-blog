@@ -7,17 +7,7 @@
   {{ end }}
 
   {{ if .Site.Params.sidebar }}
-  {{ $num_recent_posts := (index .Site.Params.sidebar "num_recent_posts" | default 5) }}
-
-  <section class="sidebar-module">
-    <h4>{{ i18n "recentPosts" }}</h4>
-    <ol class="list-unstyled">
-      {{ range first $num_recent_posts (where .Site.RegularPages "Type" "post") }}
-      <li><a href="{{.RelPermalink}}">{{.Title | markdownify }}</a></li>
-      {{ end }}
-    </ol>
-  </section>
-
+      {{ partialCached "recent.html" .}}
   {{ end }}
 
   {{ with .Site.Menus.sidebar }}
