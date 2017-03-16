@@ -170,6 +170,15 @@ section + #disqus_thread {
   margin-top: 1rem;
 }
 
+// style all blockquotes, not just Bootstrap's default of class="blockquote"
+// see: node_modules/bootstrap/scss/_type.scss
+article blockquote {
+  padding: ($spacer / 2) $spacer;
+  margin-bottom: $spacer;
+  font-size: $blockquote-font-size;
+  border-left: $blockquote-border-width solid $blockquote-border-color;
+}
+
 /*
  * Footer
  */
