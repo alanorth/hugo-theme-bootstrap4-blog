@@ -10,10 +10,14 @@
   {{- with .Params.images -}}{{ range first 1 . }}
   "image": {
     "@type": "ImageObject",
-    "url": "{{ . | absURL }}",
-    {{ with (imageConfig (printf "/static/%s" .)) }}
+    "url": "{{ . | absURL }}"
+    {{- /* Don't try to get imageConfig if image param is not local */ -}}
+    {{- if not (or (hasPrefix . "http://") (hasPrefix . "https://")) -}}
+    {{- with (imageConfig (printf "/static/%s" .)) -}}
+    ,
     "height": "{{ .Height }}",
     "width": "{{ .Width }}"
+    {{ end }}
     {{ end }}
   },
   {{- end -}}{{ end }}
