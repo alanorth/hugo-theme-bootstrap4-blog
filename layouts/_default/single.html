@@ -10,7 +10,11 @@
   {{- with .Params.images -}}{{ range first 1 . }}
   "image": {
     "@type": "ImageObject",
-    "url": "{{ . | absURL }}"
+    "url": "{{ . | absURL }}",
+    {{ with (imageConfig (printf "/static/%s" .)) }}
+    "height": "{{ .Height }}",
+    "width": "{{ .Width }}"
+    {{ end }}
   },
   {{- end -}}{{ end }}
   "url": "{{ printf "%s" .Permalink }}",
