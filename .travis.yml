@@ -1,0 +1,9 @@
+language: node_js
+node_js:
+  - 6
+  - 7
+script: npm run build
+sudo: false
+dist: trusty
+
+# vim: ts=2 sw=2 et
