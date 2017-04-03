@@ -29,10 +29,9 @@
 
 {{ define "main" }}
 
-{{ $truncate := default true .Site.Params.truncate }}
 {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
 {{ range $paginator.Pages }}
-{{ if $truncate }}
+{{ if (ne ($.Param "truncate") false) }}
 {{ .Render "summary" }}
 {{ else }}
 {{ .Render "content" }}
