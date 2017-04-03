@@ -1,4 +1,5 @@
 {{ define "schema-dot-org" }}
+
 <script type="application/ld+json">
 {
   "@context": "http://schema.org",
@@ -29,9 +30,14 @@
 
 {{ define "main" }}
 
+{{ $truncate := default true .Site.Params.truncate }}
 {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
 {{ range $paginator.Pages }}
+{{ if $truncate }}
 {{ .Render "summary" }}
+{{ else }}
+{{ .Render "content" }}
+{{ end }}
 {{ end }}
 
 {{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }}
