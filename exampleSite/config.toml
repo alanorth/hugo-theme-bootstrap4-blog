@@ -72,6 +72,7 @@ paginate = 5
   #sharingicons = true
 
   # Display post summaries instead of content in list templates (default: true)
+  # Can also be specified in front-matter to be controlled on a per-page basis.
   # truncate = true
 
   [params.sidebar]
