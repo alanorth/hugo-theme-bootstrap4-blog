@@ -40,7 +40,7 @@
           {{ range .Site.Menus.navbar }}
           {{ $menuRelURL := .URL | relLangURL }}
           <a class="nav-link {{ if eq $menuRelURL $currentRelURL }}active{{ end }}" href="{{.URL | absURL }}">{{ .Name }}</a>
-          {{ end }} 
+          {{ end }}
           {{ else }}
           {{ range where .Site.RegularPages "Type" "!=" "post" }}
           {{ $permalinkRelURL := .Permalink | relLangURL }}
