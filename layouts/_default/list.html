@@ -31,7 +31,11 @@
 
 {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
 {{ range $paginator.Pages }}
+{{ if (ne ($.Param "truncate") false) }}
 {{ .Render "summary" }}
+{{ else }}
+{{ .Render "content" }}
+{{ end }}
 {{ end }}
 
 {{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }}

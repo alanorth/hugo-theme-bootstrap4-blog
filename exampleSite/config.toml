@@ -71,6 +71,10 @@ paginate = 5
   # show sharing icons on pages/posts (default: true)
   #sharingicons = true
 
+  # Display post summaries instead of content in list templates (default: true)
+  # Can also be specified in front-matter to be controlled on a per-page basis.
+  # truncate = true
+
   [params.sidebar]
     # Optional about block for sidebar (can be Markdown)
     about = "A simple Hugo theme based on the [Bootstrap v4 blog example](http://v4-alpha.getbootstrap.com/examples/blog/)."
