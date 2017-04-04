@@ -35,16 +35,16 @@
       <div class="container">
         <nav class="nav blog-nav">
           <a class="nav-link {{ if .IsHome }}active{{ end }}" href="{{ .Site.BaseURL | absLangURL }}">{{ i18n "home" }}</a>
-          {{ $currentRelURL := .URL | relLangURL }}
+          {{ $currentURL := .URL | absLangURL }}
           {{ if .Site.Params.custom_navbar }}
           {{ range .Site.Menus.navbar }}
-          {{ $menuRelURL := .URL | relLangURL }}
-          <a class="nav-link {{ if eq $menuRelURL $currentRelURL }}active{{ end }}" href="{{.URL | absURL }}">{{ .Name }}</a>
+          {{ $menuURL := .URL | absLangURL }}
+          <a class="nav-link {{ if eq $menuURL $currentURL }}active{{ end }}" href="{{.URL | absURL }}">{{ .Name }}</a>
           {{ end }}
           {{ else }}
           {{ range where .Site.RegularPages "Type" "!=" "post" }}
-          {{ $permalinkRelURL := .Permalink | relLangURL }}
-          <a class="nav-link {{ if eq $permalinkRelURL $currentRelURL }}active{{ end }}" href="{{ .Permalink }}">{{ .Title }}</a>
+          {{ $permalinkURL := .Permalink | absLangURL }}
+          <a class="nav-link {{ if eq $permalinkURL $currentURL }}active{{ end }}" href="{{ .Permalink }}">{{ .Title }}</a>
           {{ end }}
           {{ end }}
         </nav>
