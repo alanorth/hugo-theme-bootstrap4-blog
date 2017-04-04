@@ -72,7 +72,7 @@ paginate = 5
   #sharingicons = true
 
   # Display post summaries instead of content in list templates (default: true)
-  # truncate = true
+  #truncate = true
 
   [params.sidebar]
     # Optional about block for sidebar (can be Markdown)
