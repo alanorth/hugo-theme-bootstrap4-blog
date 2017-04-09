@@ -68,6 +68,12 @@ paginate = 5
   # or by specifying menu entries in a similar way to the sidebar menu above.
   #custom_navbar = true
 
+  # The css stylesheet included with the theme is minified, which makes it
+  # difficult to tweak just one or two styles. Optionally create
+  # static/css/site-style.css and uncomment the line below, or add as many
+  # files to the array as you wish with paths relative to your site root.
+  #custom_css = ["css/site-style.css"]
+
   # show sharing icons on pages/posts (default: true)
   #sharingicons = true
 
