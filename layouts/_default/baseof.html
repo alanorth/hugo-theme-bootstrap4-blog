@@ -13,7 +13,7 @@
     <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
 
     {{ "<!-- combined, minified CSS -->" | safeHTML }}
-    <link href="{{ .Site.BaseURL }}css/style.css" rel="stylesheet" integrity="{{ .Site.Data.sri.style}}" crossorigin="anonymous">
+    <link href="{{ .Site.BaseURL }}css/style.css" rel="stylesheet"{{ if not .Site.Params.disable_sri }} integrity="{{ .Site.Data.sri.style}}" crossorigin="anonymous"{{ end }}>
 
     {{ if .RSSLink }}
     {{ "<!-- RSS 2.0 feed -->" | safeHTML }}

@@ -1,5 +1,5 @@
-<link href="{{ .Site.BaseURL }}css/cookieconsent.min.css" rel="stylesheet" type="text/css" integrity="{{ .Site.Data.sri.cookieconsentcss }}" crossorigin="anonymous">
-<script src="{{ .Site.BaseURL }}js/cookieconsent.min.js" integrity="{{ .Site.Data.sri.cookieconsentjs }}" crossorigin="anonymous" async></script>
+<link href="{{ .Site.BaseURL }}css/cookieconsent.min.css" rel="stylesheet" type="text/css"{{ if not .Site.Params.disable_sri }} integrity="{{ .Site.Data.sri.cookieconsentcss }}" crossorigin="anonymous"{{ end }}>
+<script src="{{ .Site.BaseURL }}js/cookieconsent.min.js"{{ if not .Site.Params.disable_sri }} integrity="{{ .Site.Data.sri.cookieconsentjs }}" crossorigin="anonymous"{{ end }} async></script>
 
 <script>
 window.addEventListener("load", function(){
