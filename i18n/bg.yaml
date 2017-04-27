@@ -4,6 +4,9 @@
 - id: home
   translation: "Начало"
 
+- id: recentPosts
+  translation: "Предишни"
+
 - id: readMore
   translation: "Вижте още →"
 
@@ -18,6 +21,18 @@
 
 - id: paginatorNext
   translation: "Напред"
+
+- id: cookieMessage
+  translation: "Този сайт ползва кукита."
+
+- id: cookieLink
+  translation: "Научете повече."
+
+- id: cookieDismiss
+  translation: "Разбрах!"
+
+- id: backToTop
+  translation: "Нагоре"
 
 - id: links
   translation: "Линкове"
