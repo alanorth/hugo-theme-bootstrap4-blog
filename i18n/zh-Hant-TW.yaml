@@ -1,0 +1,38 @@
+- id: about
+  translation: "關於"
+
+- id: home
+  translation: "首頁"
+
+- id: recentPosts
+  translation: "最近發表"
+
+- id: readMore
+  translation: "繼續閱讀 →"
+
+- id: translations
+  translation: "翻譯"
+
+- id: share
+  translation: "分享"
+
+- id: paginatorPrevious
+  translation: "上一頁"
+
+- id: paginatorNext
+  translation: "下一頁"
+
+- id: cookieMessage
+  translation: "本站使用 cookies。"
+
+- id: cookieLink
+  translation: "進一步瞭解。"
+
+- id: cookieDismiss
+  translation: "知道了！"
+
+- id: backToTop
+  translation: "回到頁首"
+
+- id: links
+  translation: "連結"
