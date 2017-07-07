@@ -41,7 +41,6 @@
   }
   {{- if or (.Params.categories) (.Params.tags) -}}
   ,
-  {{- /* delimit keywords by comma, even if one of .Params.categories or Params.tags is nil */ -}}
   "keywords": "{{ delimit (union .Params.categories .Params.tags) ", " }}"
   {{- end }}
 
