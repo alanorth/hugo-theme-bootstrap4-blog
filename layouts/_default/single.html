@@ -41,7 +41,8 @@
   }
   {{- if or (.Params.categories) (.Params.tags) -}}
   ,
-  "keywords": "{{ with .Params.categories }}{{ range $i, $e := . }}{{ if $i }},{{ end }}{{ $e }}{{ end }},{{ end }}{{ with .Params.tags }}{{ range $i, $e := . }}{{ if $i }},{{ end }}{{ $e }}{{ end }}{{ end }}"
+  {{- /* delimit keywords by comma, even if one of .Params.categories or Params.tags is nil */ -}}
+  "keywords": "{{ delimit (union .Params.categories .Params.tags) ", " }}"
   {{- end }}
 
   {{- with .Params.description -}}
