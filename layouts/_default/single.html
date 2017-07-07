@@ -83,7 +83,7 @@
   {{ end }}
 
   {{ if and (.Site.DisqusShortname) (ne .Params.comments false) }}
-  {{ partial "disqus.html" . }}
+  {{ template "_internal/disqus.html" . }}
   {{ end }}
   </footer>
   {{ end }}
