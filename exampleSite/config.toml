@@ -43,6 +43,9 @@ paginate = 5
   # Format dates with Go's time formatting
   date_format = "Mon Jan 02, 2006"
 
+  # Google Tag Manager id
+  # googleTagManager = "XXXZZZYYY"
+  
   # verification string for Google Webmaster Tools
   #google_verify_meta = "BAi57DROASu4b2mkVNA_EyUsobfA7Mq8BmSg7Rn-Zp9"
 
