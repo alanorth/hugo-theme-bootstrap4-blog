@@ -18,8 +18,8 @@
   "author": "Alan Orth",
   "license": "GPL-3.0",
   "devDependencies": {
-    "bootstrap": "4.0.0-alpha.6",
-    "clean-css-cli": "^4.1.3",
+    "bootstrap": "4.0.0-beta",
+    "clean-css-cli": "^4.1.6",
     "cookieconsent": "^3.0.4",
     "font-awesome": "^4.7.0",
     "node-sass": "^4.5.3"
