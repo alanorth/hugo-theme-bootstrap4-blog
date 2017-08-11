@@ -1,6 +1,6 @@
 /*
- * From the Bootstrap v4 alpha blog example
- * See: http://v4-alpha.getbootstrap.com/examples/blog/blog.css
+ * From the Bootstrap 4.0 blog example
+ * See: https://getbootstrap.com/docs/4.0/examples/blog/blog.css
  */
 
 /*
@@ -173,10 +173,8 @@ section + #disqus_thread {
 // style all blockquotes, not just Bootstrap's default of class="blockquote"
 // see: node_modules/bootstrap/scss/_type.scss
 article blockquote {
-  padding: ($spacer / 2) $spacer;
   margin-bottom: $spacer;
   font-size: $blockquote-font-size;
-  border-left: $blockquote-border-width solid $blockquote-border-color;
 }
 
 // ensure that code text doesn't butt up against the background change
