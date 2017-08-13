@@ -1,5 +1,5 @@
 # Hugo Bootstrap v4 Blog [![Build Status](https://travis-ci.org/alanorth/hugo-theme-bootstrap4-blog.svg?branch=master)](https://travis-ci.org/alanorth/hugo-theme-bootstrap4-blog)
-A simple [Hugo](https://gohugo.io) theme based on the [Bootstrap v4 blog example](http://v4-alpha.getbootstrap.com/examples/blog). Opinionated and geared towards blog-style content.
+A simple [Hugo](https://gohugo.io) theme based on the [Bootstrap v4 blog example](https://getbootstrap.com/docs/4.0/examples/blog). Opinionated and geared towards blog-style content.
 
 ![Screenshot](https://raw.githubusercontent.com/alanorth/hugo-theme-bootstrap4-blog/master/screenshot.png "Screenshot")
 
@@ -8,7 +8,7 @@ See [picturingjordan.com](https://picturingjordan.com) for an example of this th
 ## Features
 
 - Responsive design
-- Uses Bootstrap v4's [native system fonts](http://v4-alpha.getbootstrap.com/content/reboot/#native-font-stack) to load quickly and look good on all platforms
+- Uses Bootstrap v4's [native system fonts](https://getbootstrap.com/docs/4.0/content/reboot/#native-font-stack) to load quickly and look good on all platforms
 - Basic [OpenGraph](http://ogp.me) and [Twitter Card](https://dev.twitter.com/cards/types) metadata support
 - robots.txt linking to XML sitemap (disabled by default, see [Hugo docs](https://gohugo.io/extras/robots-txt/))
 - Basic support for [multi-lingual content](https://github.com/spf13/hugo/blob/master/docs/content/content/multilingual.md) (added in Hugo 0.17)
