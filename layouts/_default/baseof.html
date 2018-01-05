@@ -31,6 +31,7 @@
 
   <body>
 
+    {{ block "masthead" . }}
     <div class="blog-masthead">
       <div class="container">
         <nav class="nav blog-nav">
@@ -50,14 +51,18 @@
         </nav>
       </div>
     </div>
+    {{ end }}
 
+    {{ block "header" . }}
     <header class="blog-header">
       <div class="container">
         <h1 class="blog-title"><a href="{{ .Site.BaseURL }}" rel="home">{{ .Site.Title | safeHTML }}</a></h1>
         {{ if .Site.Params.description }}<p class="lead blog-description">{{ .Site.Params.description | markdownify }}</p>{{ end }}
       </div>
     </header>
+    {{ end }}
 
+    {{ block "body" . }}
     <div class="container">
       <div class="row">
         <div class="col-sm-8 blog-main">
@@ -72,7 +77,9 @@
 
       </div> {{ "<!-- /.row -->" | safeHTML }}
     </div> {{ "<!-- /.container -->" | safeHTML }}
+    {{ end }}
 
+    {{ block "footer" . }}
     <footer class="blog-footer">
       <p>
       {{ if .Site.Copyright }}
@@ -85,6 +92,7 @@
       <a href="#">{{ i18n "backToTop" }}</a>
       </p>
     </footer>
+    {{ end }}
 
   </body>
 
