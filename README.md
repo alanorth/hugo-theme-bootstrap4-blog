@@ -1,5 +1,5 @@
 # Hugo Bootstrap v4 Blog [![Build Status](https://travis-ci.org/alanorth/hugo-theme-bootstrap4-blog.svg?branch=master)](https://travis-ci.org/alanorth/hugo-theme-bootstrap4-blog)
-A simple [Hugo](https://gohugo.io) theme based on the [Bootstrap v4 blog example](https://getbootstrap.com/docs/4.0/examples/blog). Opinionated and geared towards blog-style content.
+A simple [Hugo](https://gohugo.io) theme based on the older two-column [Bootstrap blog example](https://v4-alpha.getbootstrap.com/examples/blog/) that was used for several versions, but has now been retired in favor of a "snarky" new example as of [Bootstrap 4.0.0's final release](https://blog.getbootstrap.com/2018/01/18/bootstrap-4/). Opinionated and geared towards blog-style content.
 
 ![Screenshot](https://raw.githubusercontent.com/alanorth/hugo-theme-bootstrap4-blog/master/screenshot.png "Screenshot")
 
