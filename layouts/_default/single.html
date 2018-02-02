@@ -39,9 +39,9 @@
     "@type": "Person",
     "name": "{{ .Params.author | default .Site.Params.author }}"
   }
-  {{- if or (.Params.categories) (.Params.tags) -}}
+  {{- if or (.Params.keywords) (or (.Params.categories) (.Params.tags)) -}}
   ,
-  "keywords": "{{ delimit (union .Params.categories .Params.tags) ", " }}"
+  "keywords": "{{ delimit (union .Params.keywords (union .Params.categories .Params.tags)) ", " }}"
   {{- end }}
 
   {{- with .Params.description -}}
