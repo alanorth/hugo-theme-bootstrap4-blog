@@ -25,4 +25,11 @@
 .#{$fa-css-prefix}-rss:before { content: $fa-var-rss; }
 .#{$fa-css-prefix}-rss-square:before { content: $fa-var-rss-square; }
 .#{$fa-css-prefix}-twitter:before { content: $fa-var-twitter; }
+.#{$fa-css-prefix}-y-combinator-square:before,
+.#{$fa-css-prefix}-yc-square:before,
+.#{$fa-css-prefix}-hacker-news:before { content: $fa-var-hacker-news; }
+.#{$fa-css-prefix}-reddit:before { content: $fa-var-reddit; }
+.#{$fa-css-prefix}-reddit-square:before { content: $fa-var-reddit-square; }
+.#{$fa-css-prefix}-stumbleupon-circle:before { content: $fa-var-stumbleupon-circle; }
+.#{$fa-css-prefix}-stumbleupon:before { content: $fa-var-stumbleupon; }
 @import "node_modules/font-awesome/scss/screen-reader";
