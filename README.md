@@ -21,7 +21,14 @@ See [picturingjordan.com](https://picturingjordan.com) for an example of this th
 - configurable keywords for every post
 
 ## Usage
-Clone the repository to your site's `themes` directory. Refer to [`exampleSite/config.toml`](https://github.com/alanorth/hugo-theme-bootstrap4-blog/blob/master/exampleSite/config.toml) for recommended configuration values.
+Clone the repository to your site's `themes` directory.
+
+### If you already using git
+git submodule add https://github.com/alanorth/hugo-theme-bootstrap4-blog.git themes/hugo-theme-bootstrap4-blog
+hugo-theme-bootstrap4-blog
+
+### Start with
+Copying the exampleSite (./themes/hugo-theme-bootstrap4-blog/exampleSite) at the root (./) of your project or refering to [`exampleSite/config.toml`](https://github.com/alanorth/hugo-theme-bootstrap4-blog/blob/master/exampleSite/config.toml) for recommended configuration values.
 
 ## Content Suggestions
 A few suggestions to help you get a good looking site quickly:
