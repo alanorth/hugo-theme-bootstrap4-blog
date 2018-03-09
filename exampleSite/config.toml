@@ -23,9 +23,6 @@ paginate = 5
   name = "Link 2"
   url = "https://example.org"
 
-# custom navbar menu entry.   See the custom_navbar parameter below for
-# details.
-
 #[[menu.navbar]]
 #  name = "Link 1"
 #  url = "https://example.org"
@@ -58,15 +55,6 @@ paginate = 5
   # site or externally, for example:
   #cookie_consent_info_url = "/cookie-information/"
   #cookie_consent_info_url = "http://cookiesandyou.com"
-
-  # customise the contents of the navbar at the top of the page.  The default
-  # behaviour is to list all static pages not in the posts directory. When the
-  # parameter below is set to true you will have to manually add entries to the
-  # navbar, either by adding the following menu variable to the front matter of
-  # the relevant pages
-  #   menu = "navbar"
-  # or by specifying menu entries in a similar way to the sidebar menu above.
-  #custom_navbar = true
 
   # show sharing icons on pages/posts (default: true)
   #sharingicons = true
