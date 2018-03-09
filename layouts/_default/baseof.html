@@ -36,10 +36,10 @@
       <div class="container">
         <nav class="nav blog-nav">
           <a class="nav-link {{ if .IsHome }}active{{ end }}" href="{{ .Site.BaseURL | absLangURL }}">{{ i18n "home" }}</a>
-          {{- $currentURL := .URL | absLangURL -}}
+          {{- $currentPage := . -}}
           {{ range .Site.Menus.navbar }}
           {{ $menuURL := .URL | absLangURL }}
-          <a class="nav-link{{ if eq $menuURL $currentURL }} active{{ end }}" href="{{.URL | absURL }}">{{ .Name }}</a>
+          <a class="nav-link{{ if or ($currentPage.IsMenuCurrent "navbar" .) ($currentPage.HasMenuCurrent "navbar" .) }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
           {{ end }}
         </nav>
       </div>
