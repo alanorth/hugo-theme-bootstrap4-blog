@@ -19,7 +19,7 @@
   "license": "GPL-3.0",
   "devDependencies": {
     "bootstrap": "4.0.0",
-    "clean-css-cli": "^4.1.10",
+    "clean-css-cli": "^4.1.11",
     "cookieconsent": "^3.0.4",
     "font-awesome": "^4.7.0",
     "node-sass": "^4.7.2"
