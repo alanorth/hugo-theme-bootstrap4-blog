@@ -9,7 +9,7 @@ See [picturingjordan.com](https://picturingjordan.com) for an example of this th
 
 - Responsive design
 - Uses Bootstrap v4's [native system font stack](https://getbootstrap.com/docs/4.0/content/reboot/#native-font-stack) to load quickly and look good on all platforms
-- Basic [OpenGraph](http://ogp.me) and [Twitter Card](https://dev.twitter.com/cards/types) metadata support
+- Excellent [structured data](https://developers.google.com/search/docs/guides/intro-structured-data) (JSON-LD), [OpenGraph](http://ogp.me), and [Twitter Card](https://dev.twitter.com/cards/types) metadata support
 - robots.txt linking to XML sitemap (disabled by default, see [Hugo docs](https://gohugo.io/extras/robots-txt/))
 - Basic support for [multi-lingual content](https://gohugo.io/content-management/multilingual/) (added in Hugo 0.17)
 - Supports Google, Bing, and Yandex site verification via meta tags
