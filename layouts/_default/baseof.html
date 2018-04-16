@@ -32,27 +32,11 @@
   <body>
 
     {{ block "masthead" . }}
-    <div class="blog-masthead">
-      <div class="container">
-        <nav class="nav blog-nav">
-          <a class="nav-link {{ if .IsHome }}active{{ end }}" href="{{ .Site.BaseURL | absLangURL }}">{{ i18n "home" }}</a>
-          {{- $currentPage := . -}}
-          {{ range .Site.Menus.navbar }}
-          {{ $menuURL := .URL | absLangURL }}
-          <a class="nav-link{{ if or ($currentPage.IsMenuCurrent "navbar" .) ($currentPage.HasMenuCurrent "navbar" .) }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
-          {{ end }}
-        </nav>
-      </div>
-    </div>
+    {{ partial "masthead.html" . }}
     {{ end }}
 
     {{ block "header" . }}
-    <header class="blog-header">
-      <div class="container">
-        <h1 class="blog-title"><a href="{{ .Site.BaseURL }}" rel="home">{{ .Site.Title | safeHTML }}</a></h1>
-        {{ if .Site.Params.description }}<p class="lead blog-description">{{ .Site.Params.description | markdownify }}</p>{{ end }}
-      </div>
-    </header>
+    {{ partial "header.html" . }}
     {{ end }}
 
     {{ block "body" . }}
@@ -73,18 +57,7 @@
     {{ end }}
 
     {{ block "footer" . }}
-    <footer class="blog-footer">
-      <p>
-      {{ if .Site.Copyright }}
-      {{ .Site.Copyright | markdownify }}
-      {{ else }}
-      Blog template created by <a href="https://twitter.com/mdo">@mdo</a>, ported to Hugo by <a href='https://twitter.com/mralanorth'>@mralanorth</a>.
-      {{ end }}
-      </p>
-      <p>
-      <a href="#">{{ i18n "backToTop" }}</a>
-      </p>
-    </footer>
+    {{ partial "footer.html" . }}
     {{ end }}
 
   </body>

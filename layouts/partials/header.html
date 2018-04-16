@@ -1,0 +1,6 @@
+<header class="blog-header">
+  <div class="container">
+    <h1 class="blog-title"><a href="{{ .Site.BaseURL }}" rel="home">{{ .Site.Title | safeHTML }}</a></h1>
+    {{ if .Site.Params.description }}<p class="lead blog-description">{{ .Site.Params.description | markdownify }}</p>{{ end }}
+  </div>
+</header>
