@@ -39,7 +39,7 @@
           {{- $currentPage := . -}}
           {{ range .Site.Menus.navbar }}
           {{ $menuURL := .URL | absLangURL }}
-          <a class="nav-link{{ if or ($currentPage.IsMenuCurrent "navbar" .) ($currentPage.HasMenuCurrent "navbar" .) }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+          <a class="nav-link{{ if or ($currentPage.IsMenuCurrent "navbar" .) ($currentPage.HasMenuCurrent "navbar" .) }} active{{end}}" href="{{ .URL }}" title="{{ .Name }}">{{ .Name }}</a>
           {{ end }}
         </nav>
       </div>
