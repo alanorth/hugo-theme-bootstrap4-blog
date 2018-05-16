@@ -1,0 +1,38 @@
+- id: about
+  translation: "Om"
+
+- id: home
+  translation: "Hjem"
+
+- id: recentPosts
+  translation: "Siste innlegg"
+
+- id: readMore
+  translation: "Les mer →"
+
+- id: translations
+  translation: "Oversettelser"
+
+- id: share
+  translation: "Del"
+
+- id: paginatorPrevious
+  translation: "Forrige side"
+
+- id: paginatorNext
+  translation: "Neste side"
+
+- id: cookieMessage
+  translation: "Denne nettsiden bruker informasjonskapsler."
+
+- id: cookieLink
+  translation: "Lær mer."
+
+- id: cookieDismiss
+  translation: "Greit!"
+
+- id: backToTop
+  translation: "Til toppen"
+
+- id: links
+  translation: "Linker"
