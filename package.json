@@ -22,6 +22,6 @@
     "clean-css-cli": "^4.1.11",
     "cookieconsent": "^3.0.4",
     "font-awesome": "^4.7.0",
-    "node-sass": "^4.8.3"
+    "node-sass": "^4.9.1"
   }
 }
