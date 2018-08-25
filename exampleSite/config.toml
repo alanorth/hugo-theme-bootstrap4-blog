@@ -37,6 +37,9 @@ paginate = 5
   # Description/subtitle for homepage (can be Markdown)
   description = "A simple Hugo theme based on the Bootstrap v4 blog example."
 
+  # Show header (default: true)
+  #header_visible = true
+
   # Format dates with Go's time formatting
   date_format = "Mon Jan 02, 2006"
 
