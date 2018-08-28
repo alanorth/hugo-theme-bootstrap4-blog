@@ -30,7 +30,7 @@
 {{ define "main" }}
 
 {{ $truncate := default true .Site.Params.truncate }}
-{{ $paginator := .Paginate (where .Site.Pages "Section" "in" .Site.Params.mainSections) }}
+{{ $paginator := .Paginate (where .Site.RegularPages "Section" "in" .Site.Params.mainSections) }}
 {{ range $paginator.Pages }}
 {{ if $truncate }}
 {{ .Render "summary" }}
