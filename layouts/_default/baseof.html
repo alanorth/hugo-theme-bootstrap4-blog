@@ -47,7 +47,7 @@
     {{ end }}
 
     {{ block "header" . }}
-    {{ if (ne ($.Param "header_visible") false) }}
+    {{ if (ne .Site.Params.header_visible false) }}
     <header class="blog-header">
       <div class="container">
         <h1 class="blog-title"><a href="{{ .Site.BaseURL }}" rel="home">{{ .Site.Title | safeHTML }}</a></h1>
