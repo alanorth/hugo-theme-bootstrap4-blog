@@ -53,6 +53,6 @@ There are several ways to help with the development of the theme:
 - Fork [the repository](https://github.com/alanorth/hugo-theme-bootstrap4-blog) on GitHub, add features on a "feature" branch like `update-bootstrap`, and then send a [pull request](https://github.com/alanorth/hugo-theme-bootstrap4-blog/compare) with your changes
 
 ## License
-This repository contains the code of [Bootstrap](http://getbootstrap.com), which is licensed under the [MIT license](https://tldrlegal.com/license/mit-license), and [Font Awesome](http://fontawesome.io/), which uses [various licenses](http://fontawesome.io/license/).
+This repository contains the code of [Bootstrap](https://getbootstrap.com), which is licensed under the [MIT license](https://tldrlegal.com/license/mit-license), and [Font Awesome](https://fontawesome.com/), which uses [various licenses](https://fontawesome.com/license/).
 
 Otherwise, the contents are [GPLv3](https://www.gnu.org/licenses/gpl-3.0.txt).
