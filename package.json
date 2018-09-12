@@ -16,7 +16,7 @@
   },
   "keywords": "hugo",
   "author": "Alan Orth",
-  "license": "GPL-3.0",
+  "license": "CC-BY-3.0",
   "devDependencies": {
     "bootstrap": "4.1.3",
     "clean-css-cli": "^4.2.1",

@@ -1,5 +1,5 @@
 name = "Hugo Bootstrap v4 Blog"
-license = "GPL-3.0"
+license = "CC-BY-3.0"
 licenselink = "https://github.com/alanorth/hugo-theme-bootstrap4/blob/master/LICENSE.txt"
 description = "A simple Hugo theme based on the Bootstrap v4 blog example."
 homepage = "https://github.com/alanorth/hugo-theme-bootstrap4"
