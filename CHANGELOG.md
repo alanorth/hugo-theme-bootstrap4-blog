@@ -8,7 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Dutch translation (@bit33)
 - Remove Google+ icons (@bit33)
-- Update templates for Hugo 0.55.0 (@aorth)
+- Update templates for Hugo 0.55.0 (@alanorth)
 
 ## [1.2.0] - 2019-02-13
 ### Updated
