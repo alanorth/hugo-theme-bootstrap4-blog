@@ -1,0 +1,38 @@
+- id: about
+  translation: "حول"
+
+- id: home
+  translation: "دار"
+
+- id: recentPosts
+  translation: "المشاركات الاخيرة"
+
+- id: readMore
+  translation: "← قراءة المزيد"
+
+- id: translations
+  translation: "ترجمة"
+
+- id: share
+  translation: "تقاسم"
+
+- id: paginatorPrevious
+  translation: "الصفحة السابقة"
+
+- id: paginatorNext
+  translation: "الصفحة التالية"
+
+- id: cookieMessage
+  translation: ".هذا الموقع يستخدم الكوكيز"
+
+- id: cookieLink
+  translation: ".أعرف أكثر"
+
+- id: cookieDismiss
+  translation: "!فهمتك"
+
+- id: backToTop
+  translation: "العودة إلى الأعلى"
+
+- id: links
+  translation: "الروابط"
