@@ -2,7 +2,7 @@
   {{ if and (.Site.Params.sidebar) (isset .Site.Params.sidebar "about") }}
   <section class="sidebar-module sidebar-module-inset">
     <h4>{{ i18n "about" }}</h4>
-    <p>{{ .Site.Params.sidebar.about | markdownify }}</p>
+    <p dir="auto">{{ .Site.Params.sidebar.about | markdownify }}</p>
   </section>
   {{ end }}
 
