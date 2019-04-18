@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ .Lang }}">
+<html lang="{{ .Lang }}" {{ if eq .Lang "ar" }}dir="rtl"{{ end }}>
 
   <head>
     {{ partial "head-meta.html" . }}
@@ -12,8 +12,13 @@
 
     <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
 
+    {{ if eq .Lang "ar" }}
+    {{ "<!-- ar -->" | safeHTML }}
+    <link href="{{ .Site.BaseURL }}css/style.rtl.css" rel="stylesheet"{{ if not .Site.Params.disable_sri }} integrity="{{ .Site.Data.sri.styleltr}}" crossorigin="anonymous"{{ end }}>
+    {{ else }}
     {{ "<!-- combined, minified CSS -->" | safeHTML }}
     <link href="{{ .Site.BaseURL }}css/style.css" rel="stylesheet"{{ if not .Site.Params.disable_sri }} integrity="{{ .Site.Data.sri.style}}" crossorigin="anonymous"{{ end }}>
+    {{ end }}
 
     {{ "<!-- RSS 2.0 feed -->" | safeHTML }}
     {{ with .OutputFormats.Get "rss" -}}

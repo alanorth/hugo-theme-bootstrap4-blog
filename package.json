@@ -8,11 +8,12 @@
   },
   "scripts": {
     "build:css": "node-sass --output-style expanded --precision 6 source/scss/style.scss static/css/style.css.tmp && cleancss --level 1 static/css/style.css.tmp -o static/css/style.css",
+    "build:ltrcss": "rtlcss -s static/css/style.css.tmp static/css/style.rtl.css.tmp && cleancss --level 1 static/css/style.rtl.css.tmp -o static/css/style.rtl.css",
     "build:fonts": "cp node_modules/font-awesome/fonts/* static/fonts",
     "build:cookieconsent": "cp node_modules/cookieconsent/build/cookieconsent.min.css static/css && cp node_modules/cookieconsent/build/cookieconsent.min.js static/js",
     "build:generatesri": "node build/sri.js > data/sri.toml",
-    "build": "npm run build:css && npm run build:fonts && npm run build:cookieconsent && npm run build:generatesri && npm run clean",
-    "clean": "rm static/css/style.css.tmp"
+    "build": "npm run build:css && npm run build:ltrcss && npm run build:fonts && npm run build:cookieconsent && npm run build:generatesri && npm run clean",
+    "clean": "rm static/css/style.css.tmp static/css/style.rtl.css.tmp"
   },
   "keywords": "hugo",
   "author": "Alan Orth",
