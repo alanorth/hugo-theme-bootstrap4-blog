@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Unreleased changes
 ### Added
 - Arabic translation (@alanorth)
+- Support for RTL CSS (@alanorth)
 
 ### Updated
 - clean-css-cli 4.3.0
