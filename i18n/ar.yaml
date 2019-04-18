@@ -1,38 +1,38 @@
 - id: about
-  translation: "حول"
+  translation: "عن المُدَوَّنَة"
 
 - id: home
-  translation: "دار"
+  translation: "الصَّفْحَة الرَّئيسِيَّة"
 
 - id: recentPosts
-  translation: "المشاركات الاخيرة"
+  translation: "المَنْشورات الأَخِيرَة"
 
 - id: readMore
-  translation: "← قراءة المزيد"
+  translation: "← قِرَاءَة المَزِيد"
 
 - id: translations
-  translation: "ترجمة"
+  translation: "تَرْجَمَة"
 
 - id: share
-  translation: "تقاسم"
+  translation: "شَارِك"
 
 - id: paginatorPrevious
-  translation: "الصفحة السابقة"
+  translation: "الصَّفْحَة السَّابِقَة"
 
 - id: paginatorNext
-  translation: "الصفحة التالية"
+  translation: "الصَّفْحَة التَّالِيَة"
 
 - id: cookieMessage
-  translation: ".هذا الموقع يستخدم الكوكيز"
+  translation: "هذا المَوْقِع يَسْتَخْدِم مَلَفَّات كُوكِيز"
 
 - id: cookieLink
-  translation: ".أعرف أكثر"
+  translation: ".اعْرَف أَكْثَر"
 
 - id: cookieDismiss
-  translation: "!فهمتك"
+  translation: "!أُوَافِق"
 
 - id: backToTop
-  translation: "العودة إلى الأعلى"
+  translation: "العَوْدَة إِلَى الاَعْلَى"
 
 - id: links
-  translation: "الروابط"
+  translation: "الرَِّوَابِط"
