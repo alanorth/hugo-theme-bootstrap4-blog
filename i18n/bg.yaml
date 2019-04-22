@@ -36,3 +36,9 @@
 
 - id: links
   translation: "Линкове"
+
+- id: authoredBy
+  translation: "от"
+
+- id: postedIn
+  translation: "в"

@@ -36,3 +36,12 @@
 
 - id: links
   translation: "Links"
+
+- id: authoredBy
+  translation: "by"
+
+- id: postedIn
+  translation: "in"
+
+- id: comma
+  translation: ","

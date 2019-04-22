@@ -36,3 +36,12 @@
 
 - id: links
   translation: "الرَِّوَابِط"
+
+- id: authoredBy
+  translation: "الكاتب"
+
+- id: postedIn
+  translation: "في"
+
+- id: comma
+  translation: "،"
