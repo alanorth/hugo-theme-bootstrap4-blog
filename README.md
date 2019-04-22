@@ -18,7 +18,7 @@ See [picturingjordan.com](https://picturingjordan.com) for an example of this th
 - Can show a message about cookie usage to the user, see [`exampleSite/config.toml`](https://github.com/alanorth/hugo-theme-bootstrap4-blog/blob/master/exampleSite/config.toml)
 - Allow addition of custom `<head>` code in site's `layouts/partial/head-custom.html` (see [#17](https://github.com/alanorth/hugo-theme-bootstrap4-blog/pull/17))
 - Configurable display of summaries of content in list templates.
-- configurable keywords for every post
+- Configurable keywords for every post
 
 ## Usage
 Clone the repository to your site's `themes` directory. Refer to [`exampleSite/config.toml`](https://github.com/alanorth/hugo-theme-bootstrap4-blog/blob/master/exampleSite/config.toml) for recommended configuration values.
