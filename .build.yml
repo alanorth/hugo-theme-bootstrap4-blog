@@ -1,0 +1,15 @@
+image: archlinux
+packages:
+  - nodejs-lts-dubnium
+  - npm
+sources:
+  - https://git.sr.ht/~alanorth/hugo-theme-bootstrap4-blog
+tasks:
+  - setup: |
+      id
+      node -v
+      cd hugo-theme-bootstrap4-blog
+      npm install 
+  - test: |
+      cd hugo-theme-bootstrap4-blog
+      npm run build
