@@ -2,7 +2,7 @@
     <h4>{{ i18n "recentPosts" }}</h4>
     <ol class="list-unstyled">
 {{ $num_recent_posts := (index .Site.Params.sidebar "num_recent_posts" | default 5) }}
-{{ range first $num_recent_posts (where .Site.Pages "Section" "in" .Site.Params.mainSections) }}
+{{ range first $num_recent_posts (where .Site.RegularPages "Section" "in" .Site.Params.mainSections) }}
 <li><a href="{{.RelPermalink}}">{{.Title | markdownify }}</a></li>
 {{ end }}
     </ol>
