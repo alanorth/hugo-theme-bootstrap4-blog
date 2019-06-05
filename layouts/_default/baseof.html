@@ -14,10 +14,10 @@
 
     {{ if eq .Lang "ar" }}
     {{ "<!-- ar -->" | safeHTML }}
-    <link href="{{ .Site.BaseURL }}css/style.rtl.css" rel="stylesheet"{{ if not .Site.Params.disable_sri }} integrity="{{ .Site.Data.sri.styleltr}}" crossorigin="anonymous"{{ end }}>
+    <link href="{{ "css/style.rtl.css" | absURL }}" rel="stylesheet"{{ if not .Site.Params.disable_sri }} integrity="{{ .Site.Data.sri.styleltr}}" crossorigin="anonymous"{{ end }}>
     {{ else }}
     {{ "<!-- combined, minified CSS -->" | safeHTML }}
-    <link href="{{ .Site.BaseURL }}css/style.css" rel="stylesheet"{{ if not .Site.Params.disable_sri }} integrity="{{ .Site.Data.sri.style}}" crossorigin="anonymous"{{ end }}>
+    <link href="{{ "css/style.css" | absURL }}" rel="stylesheet"{{ if not .Site.Params.disable_sri }} integrity="{{ .Site.Data.sri.style}}" crossorigin="anonymous"{{ end }}>
     {{ end }}
 
     {{ "<!-- RSS 2.0 feed -->" | safeHTML }}
@@ -55,7 +55,7 @@
     {{ if (ne .Site.Params.header_visible false) }}
     <header class="blog-header">
       <div class="container">
-        <h1 class="blog-title" dir="auto"><a href="{{ .Site.BaseURL }}" rel="home">{{ .Site.Title | safeHTML }}</a></h1>
+        <h1 class="blog-title" dir="auto"><a href="{{ "/" | absURL }}" rel="home">{{ .Site.Title | safeHTML }}</a></h1>
         {{ if .Site.Params.description }}<p class="lead blog-description" dir="auto">{{ .Site.Params.description | markdownify }}</p>{{ end }}
       </div>
     </header>
