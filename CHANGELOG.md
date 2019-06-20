@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Only list "Regular" pages in recent posts in sidebar (@alanorth)
 - Use absURL instead of baseURL to be more robust with different site configurations (@TommySprat)
+- Quote date in post metadata so it does not get escaped (@TommySprat #111)
 
 ## [1.3.1] - 2019-05-05
 ### Added
