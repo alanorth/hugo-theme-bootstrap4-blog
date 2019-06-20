@@ -25,12 +25,12 @@
   "wordCount": "{{ .WordCount }}",
   {{- $ISO8601 := "2006-01-02T15:04:05-07:00" }}
   {{- if not .PublishDate.IsZero }}
-  "datePublished": "{{ .PublishDate.Format $ISO8601 }}",
+  "datePublished": {{ .PublishDate.Format $ISO8601 }},
   {{- else }}
-  "datePublished": "{{ .Date.Format $ISO8601 }}",
+  "datePublished": {{ .Date.Format $ISO8601 }},
   {{- end }}
   {{- if not .Lastmod.IsZero }}
-  "dateModified": "{{ .Lastmod.Format $ISO8601 }}",
+  "dateModified": {{ .Lastmod.Format $ISO8601 }},
   {{- end }}
   {{- with .Site.Social.GooglePlus }}
   "publisher": "{{ printf "%s" . }}",
