@@ -20,6 +20,18 @@
     </ol>
   </section>
   {{ end }}
+
+  {{ if .Site.Params.sidebar }}
+  <section class="sidebar-module">
+    <h4>{{ i18n "tags" }}</h4>
+    <ul>
+      {{ range $name, $items := .Site.Taxonomies.tags }}
+      <li><a href="{{ "tags/" | relLangURL }}{{ $name | urlize | lower }}" title="{{ $name }}">{{ .Page.Title }} ({{ .Count }})</a>&emsp;</li>
+      {{ end }}
+    </ul>
+  </section>
+  {{ end }}
+
 </aside><!-- /.blog-sidebar -->
 
 {{- /* vim: set ts=2 sw=2 et: */}}

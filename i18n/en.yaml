@@ -45,3 +45,7 @@
 
 - id: comma
   translation: ","
+
+- id: tags
+  translation: "Tags"
+
