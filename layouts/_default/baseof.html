@@ -42,12 +42,8 @@
         <nav class="nav blog-nav">
           {{- $currentPage := . -}}
           {{ range .Site.Menus.navbar }}
-            {{ if eq .URL "/" }}
-              <a class="nav-link {{ if .IsHome }}active{{ end }}" href="{{ .Site.BaseURL | absLangURL }}">{{ i18n "home" }}</a>
-            {{ else }}
-              {{ $menuURL := .URL | absLangURL }}
-              <a class="nav-link{{ if or ($currentPage.IsMenuCurrent "navbar" .) ($currentPage.HasMenuCurrent "navbar" .) }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
-            {{ end }}
+            {{ $menuURL := .URL | absLangURL }}
+            <a class="nav-link{{ if or ($currentPage.IsMenuCurrent "navbar" .) ($currentPage.HasMenuCurrent "navbar" .) }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
           {{ end }}
         </nav>
       </div>
