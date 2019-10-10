@@ -12,10 +12,10 @@
 
   {{ with .Site.Menus.sidebar }}
   <section class="sidebar-module">
-    <h4>{{ i18n "links" }}</h4>
+    <h4>{{ i18n "projects" }}</h4>
     <ol class="list-unstyled">
       {{ range . }}
-      <li><a href="{{ .URL | absURL }}">{{ .Name }}</a></li>
+      <li>&gt; <a href="{{ .URL | absURL }}">{{ .Name }}</a> &lt;</li>
       {{ end }}
     </ol>
   </section>
