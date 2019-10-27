@@ -12,7 +12,7 @@ paginate = 5
 #disqusShortname = "XYW"
 
 [permalinks]
-  post = "/:year/:month/:title/"
+  posts = "/:year/:month/:title/"
   page = "/:slug/"
 
 [[menu.sidebar]]
