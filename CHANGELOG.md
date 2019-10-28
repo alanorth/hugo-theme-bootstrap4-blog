@@ -8,6 +8,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 - "Home" link for blogs that are not at the root of the domain (@phofman #115)
 
+### Changed
+- Use "posts" instead of "post" in exampleSite to align closer with Hugo quick start docs (@sboots #117)
+
 ## [[1.3.2]] - 2019-06-20
 ### Changed
 - Only list "Regular" pages in recent posts in sidebar (@alanorth)
