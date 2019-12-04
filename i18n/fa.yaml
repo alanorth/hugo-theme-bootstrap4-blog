@@ -1,0 +1,47 @@
+- id: about
+  translation: "درباره من"
+
+- id: home
+  translation: "صفحه اصلی"
+
+- id: recentPosts
+  translation: "مطالب تازه"
+
+- id: readMore
+  translation: "بیشتر بخوانید ←"
+
+- id: translations
+  translation: "ترجمه"
+
+- id: share
+  translation: "به اشتراک گذاشتن"
+
+- id: paginatorPrevious
+  translation: "صفحه قبلی"
+
+- id: paginatorNext
+  translation: "صفحه بعدی"
+
+- id: cookieMessage
+  translation: "در این سایت از کوکیز استفاده میشود"
+
+- id: cookieLink
+  translation: ".بیشتر بدانید"
+
+- id: cookieDismiss
+  translation: "!متوجه شدم"
+
+- id: backToTop
+  translation: "برگشت به بالا"
+
+- id: links
+  translation: "لینکها"
+
+- id: authoredBy
+  translation: "بوسیله"
+
+- id: postedIn
+  translation: "در"
+
+- id: comma
+  translation: "،"
