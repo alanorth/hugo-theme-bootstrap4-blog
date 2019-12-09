@@ -8,6 +8,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Farsi strings for user interface
 
+## Updated
+- bootstrap 4.4.1
+
 ## [[1.3.3]] - 2019-12-02
 ### Fixed
 - "Home" link for blogs that are not at the root of the domain (@phofman #115)
