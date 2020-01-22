@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Updated
 - bootstrap 4.4.1
+- Fix typo in README.md (@xekon, #118)
 
 ## [[1.3.3]] - 2019-12-02
 ### Fixed
