@@ -8,10 +8,10 @@
   },
   "scripts": {
     "build:css": "node-sass --output-style expanded --precision 6 source/scss/style.scss assets/css/style.css.tmp && cleancss --level 1 assets/css/style.css.tmp -o assets/css/style.css",
-    "build:ltrcss": "rtlcss -s assets/css/style.css.tmp assets/css/style.rtl.css.tmp && cleancss --level 1 assets/css/style.rtl.css.tmp -o assets/css/style.rtl.css",
+    "build:rtlcss": "rtlcss -s assets/css/style.css.tmp assets/css/style.rtl.css.tmp && cleancss --level 1 assets/css/style.rtl.css.tmp -o assets/css/style.rtl.css",
     "build:fonts": "cp node_modules/font-awesome/fonts/* static/fonts",
     "build:cookieconsent": "cp node_modules/cookieconsent/build/cookieconsent.min.css assets/css && cp node_modules/cookieconsent/build/cookieconsent.min.js assets/js",
-    "build": "npm run build:css && npm run build:ltrcss && npm run build:fonts && npm run build:cookieconsent && npm run clean",
+    "build": "npm run build:css && npm run build:rtlcss && npm run build:fonts && npm run build:cookieconsent && npm run clean",
     "clean": "rm assets/css/style.css.tmp assets/css/style.rtl.css.tmp"
   },
   "keywords": "hugo",
