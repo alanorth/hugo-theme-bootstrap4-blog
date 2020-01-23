@@ -13,7 +13,7 @@
     <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
 
     {{ if or (eq .Lang "ar") (eq .Lang "fa") }}
-    {{ "<!-- ar -->" | safeHTML }}
+    {{ "<!-- RTL -->" | safeHTML }}
     {{ $styleRtl := resources.Get "css/style.rtl.css" | resources.Fingerprint }}
     <link href="{{ $styleRtl.Permalink }}" rel="stylesheet"{{ if not .Site.Params.disable_sri }} integrity="{{ $styleRtl.Data.Integrity }}" crossorigin="anonymous"{{ end }}>
     {{ else }}
