@@ -14,10 +14,12 @@
 
     {{ if or (eq .Lang "ar") (eq .Lang "fa") }}
     {{ "<!-- ar -->" | safeHTML }}
-    <link href="{{ "css/style.rtl.css" | absURL }}" rel="stylesheet"{{ if not .Site.Params.disable_sri }} integrity="{{ .Site.Data.sri.styleltr}}" crossorigin="anonymous"{{ end }}>
+    {{ $styleRtl := resources.Get "css/style.rtl.css" | resources.Fingerprint }}
+    <link href="{{ $styleRtl.Permalink }}" rel="stylesheet"{{ if not .Site.Params.disable_sri }} integrity="{{ $styleRtl.Data.Integrity }}" crossorigin="anonymous"{{ end }}>
     {{ else }}
     {{ "<!-- combined, minified CSS -->" | safeHTML }}
-    <link href="{{ "css/style.css" | absURL }}" rel="stylesheet"{{ if not .Site.Params.disable_sri }} integrity="{{ .Site.Data.sri.style}}" crossorigin="anonymous"{{ end }}>
+    {{ $style := resources.Get "css/style.css" | resources.Fingerprint }}
+    <link href="{{ $style.Permalink }}" rel="stylesheet"{{ if not .Site.Params.disable_sri }} integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous"{{ end }}>
     {{ end }}
 
     {{ "<!-- RSS 2.0 feed -->" | safeHTML }}

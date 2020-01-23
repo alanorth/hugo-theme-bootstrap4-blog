@@ -1,5 +1,7 @@
-<link href="{{ "css/cookieconsent.min.css" | absURL }}" rel="stylesheet" type="text/css"{{ if not .Site.Params.disable_sri }} integrity="{{ .Site.Data.sri.cookieconsentcss }}" crossorigin="anonymous"{{ end }}>
-<script src="{{ "js/cookieconsent.min.js" |absURL }}"{{ if not .Site.Params.disable_sri }} integrity="{{ .Site.Data.sri.cookieconsentjs }}" crossorigin="anonymous"{{ end }} async></script>
+{{ $cookieConsentStyle := resources.Get "css/cookieconsent.min.css" | resources.Fingerprint }}
+<link href="{{ $cookieConsentStyle.Permalink }}" rel="stylesheet" type="text/css"{{ if not .Site.Params.disable_sri }} integrity="{{ $cookieConsentStyle.Data.Integrity }}" crossorigin="anonymous"{{ end }}>
+{{ $cookieConsentScript := resources.Get "js/cookieconsent.min.js" | resources.Fingerprint }}
+<script src="{{ $cookieConsentScript.Permalink }}"{{ if not .Site.Params.disable_sri }} integrity="{{ $cookieConsentScript.Data.Integrity }}" crossorigin="anonymous"{{ end }} async></script>
 
 <script>
 window.addEventListener("load", function(){
