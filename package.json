@@ -22,7 +22,7 @@
     "clean-css-cli": "^4.3.0",
     "cookieconsent": "3.0.4",
     "font-awesome": "^4.7.0",
-    "node-sass": "^4.13.0",
+    "node-sass": "^4.13.1",
     "rtlcss": "^2.4.1"
   }
 }
