@@ -11,8 +11,7 @@
     "build:ltrcss": "rtlcss -s assets/css/style.css.tmp assets/css/style.rtl.css.tmp && cleancss --level 1 assets/css/style.rtl.css.tmp -o assets/css/style.rtl.css",
     "build:fonts": "cp node_modules/font-awesome/fonts/* static/fonts",
     "build:cookieconsent": "cp node_modules/cookieconsent/build/cookieconsent.min.css assets/css && cp node_modules/cookieconsent/build/cookieconsent.min.js assets/js",
-    "build:generatesri": "node build/sri.js > data/sri.toml",
-    "build": "npm run build:css && npm run build:ltrcss && npm run build:fonts && npm run build:cookieconsent && npm run build:generatesri && npm run clean",
+    "build": "npm run build:css && npm run build:ltrcss && npm run build:fonts && npm run build:cookieconsent && npm run clean",
     "clean": "rm assets/css/style.css.tmp assets/css/style.rtl.css.tmp"
   },
   "keywords": "hugo",
