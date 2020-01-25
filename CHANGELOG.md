@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Updated
 - bootstrap 4.4.1
 - Fix typo in README.md (@xekon, #118)
+- Font Awesome 5 (make sure you [update](https://fontawesome.com/how-to-use/on-the-web/setup/upgrading-from-version-4) any custom icons you might be using in your content, site layouts, partials, etc).
 
 ## Changed
 - Use Hugo's built-in subresource integrity support instead of the generatesri
