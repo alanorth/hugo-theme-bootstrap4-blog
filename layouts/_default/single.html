@@ -32,9 +32,6 @@
   {{- if not .Lastmod.IsZero }}
   "dateModified": {{ .Lastmod.Format $ISO8601 }},
   {{- end }}
-  {{- with .Site.Social.GooglePlus }}
-  "publisher": "{{ printf "%s" . }}",
-  {{- end }}
   "author": {
     "@type": "Person",
     "name": "{{ .Params.author | default .Site.Params.author }}"
