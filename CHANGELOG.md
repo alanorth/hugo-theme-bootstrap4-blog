@@ -16,6 +16,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Use Hugo's built-in subresource integrity support instead of the generatesri
 tooling that I wrote by hand a few years ago (#120)
 
+## Removed
+- Several references to Google Plus (@xekon, #122)
+
 ## [[1.3.3]] - 2019-12-02
 ### Fixed
 - "Home" link for blogs that are not at the root of the domain (@phofman #115)
