@@ -1,8 +1,0 @@
-{{ if .Params.categories }}
-<span class="svg folder" aria-hidden="true"></span>&nbsp;{{ range $index, $category := .Params.categories }}{{ if gt $index 0 }}{{ i18n "comma" }} {{ end }}<a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}" rel="category tag">{{ . }}</a>{{ end }}
-{{ end }}
-{{ if .Params.tags }}
-<span class="svg tag" aria-hidden="true"></span>&nbsp;{{ range $index, $tag := .Params.tags }}{{ if gt $index 0 }}{{ i18n "comma" }} {{ end }}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" rel="tag">{{ . }}</a>{{ end }}
-{{ end }}
-
-{{- /* vim: set ts=2 sw=2 et: */}}
