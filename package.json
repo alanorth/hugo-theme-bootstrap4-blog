@@ -11,6 +11,9 @@
     "build:rtlcss": "rtlcss -s assets/css/style.css.tmp assets/css/style.rtl.css.tmp && cleancss --level 1 assets/css/style.rtl.css.tmp -o assets/css/style.rtl.css",
     "build:fonts": "cp node_modules/@fortawesome/fontawesome-free/webfonts/* static/webfonts",
     "build:cookieconsent": "cp node_modules/cookieconsent/build/cookieconsent.min.css assets/css && cp node_modules/cookieconsent/build/cookieconsent.min.js assets/js",
+    "minify:html": "html-minifier --input-dir ../../public --output-dir ../../public-out --collapse-whitespace --preserve-line-breaks --file-ext html",
+    "build:html": "npm run minify:html",
+    "watch:html": "onchange 'src/**/*.html -- npm run build:html",
     "build": "npm run build:css && npm run build:rtlcss && npm run build:fonts && npm run build:cookieconsent && npm run clean",
     "clean": "rm assets/css/style.css.tmp assets/css/style.rtl.css.tmp"
   },
