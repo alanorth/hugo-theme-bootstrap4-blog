@@ -22,6 +22,10 @@
     <link href="{{ $style.Permalink }}" rel="stylesheet"{{ if not .Site.Params.disable_sri }} integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous"{{ end }}>
     {{ end }}
 
+    {{ "<!-- minified Font Awesome for SVG icons -->" | safeHTML }}
+    {{ $fontawesome := resources.Get "js/fontawesome.min.js" | resources.Fingerprint }}
+    <script defer src="{{ $fontawesome.Permalink }}" integrity="{{ $fontawesome.Data.Integrity }}" crossorigin="anonymous"></script>
+
     {{ "<!-- RSS 2.0 feed -->" | safeHTML }}
     {{ with .OutputFormats.Get "rss" -}}
       {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}

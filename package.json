@@ -9,20 +9,24 @@
   "scripts": {
     "build:css": "node-sass --output-style expanded --precision 6 source/scss/style.scss assets/css/style.css.tmp && cleancss --level 1 assets/css/style.css.tmp -o assets/css/style.css",
     "build:rtlcss": "rtlcss -s assets/css/style.css.tmp assets/css/style.rtl.css.tmp && cleancss --level 1 assets/css/style.rtl.css.tmp -o assets/css/style.rtl.css",
-    "build:fonts": "cp node_modules/@fortawesome/fontawesome-free/webfonts/* static/webfonts",
     "build:cookieconsent": "cp node_modules/cookieconsent/build/cookieconsent.min.css assets/css && cp node_modules/cookieconsent/build/cookieconsent.min.js assets/js",
-    "build": "npm run build:css && npm run build:rtlcss && npm run build:fonts && npm run build:cookieconsent && npm run clean",
+    "build:js": "webpack",
+    "build": "npm run build:css && npm run build:rtlcss && npm run build:js && npm run build:cookieconsent && npm run clean",
     "clean": "rm assets/css/style.css.tmp assets/css/style.rtl.css.tmp"
   },
   "keywords": "hugo",
   "author": "Alan Orth",
   "license": "CC-BY-3.0",
   "devDependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.26",
+    "@fortawesome/free-brands-svg-icons": "^5.12.0",
+    "@fortawesome/free-solid-svg-icons": "^5.12.0",
     "bootstrap": "~4.4.1",
     "clean-css-cli": "^4.3.0",
     "cookieconsent": "3.0.4",
-    "@fortawesome/fontawesome-free": "^5.12.0",
     "node-sass": "^4.13.1",
-    "rtlcss": "^2.4.1"
+    "rtlcss": "^2.4.1",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
   }
 }
