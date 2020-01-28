@@ -8,18 +8,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Farsi strings for user interface
 
-## Updated
+### Updated
 - bootstrap 4.4.1
 - Fix typo in README.md (@xekon, #118)
 - Font Awesome 5 (make sure you [update](https://fontawesome.com/how-to-use/on-the-web/setup/upgrading-from-version-4) any custom icons you might be using in your content, site layouts, partials, etc).
 
-## Changed
+### Changed
 - Use Hugo's built-in subresource integrity support instead of the generatesri
 tooling that I wrote by hand a few years ago (#120, @alanorth)
 - Use Font Awesome SVGs via JavaScript instead of web fonts (@alanorth)
 - Category and tag links now have a trailing slash (#128, @alanorth)
 
-## Removed
+### Removed
 - Several references to Google Plus (@xekon, #122)
 
 ## [[1.3.3]] - 2019-12-02
