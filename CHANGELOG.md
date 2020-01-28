@@ -15,7 +15,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Changed
 - Use Hugo's built-in subresource integrity support instead of the generatesri
-tooling that I wrote by hand a few years ago (#120)
+tooling that I wrote by hand a few years ago (#120, @alanorth)
+- Use Font Awesome SVGs via JavaScript instead of web fonts (@alanorth)
+- Category and tag links now have a trailing slash (#128, @alanorth)
 
 ## Removed
 - Several references to Google Plus (@xekon, #122)
