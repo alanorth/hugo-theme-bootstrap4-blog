@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## Unreleased changes
+### Updated
+- npm dependencies: rtlcss 2.5.0, webpack 4.42.0, fontawesome solid icons 5.12.1
+
 ## [[1.4.0]] - 2020-01-28
 ### Added
 - Farsi strings for user interface
