@@ -6,11 +6,11 @@
   "@context": "http://schema.org",
   "@type": "BlogPosting",
   {{- /* Google recommends the headline be no more than 110 characters */}}
-  "headline": "{{ substr .Title 0 110 }}",
+  "headline": {{ substr .Title 0 110 }},
   {{- with .Params.images -}}{{ range first 1 . }}
   "image": {
     "@type": "ImageObject",
-    "url": "{{ . | absURL }}"
+    "url": {{ . | absURL }}
     {{- /* Don't try to get imageConfig if image param is not local */ -}}
     {{- if not (or (hasPrefix . "http://") (hasPrefix . "https://")) -}}
     {{- with (imageConfig (printf "/static/%s" .)) -}}
@@ -21,7 +21,7 @@
     {{ end }}
   },
   {{- end -}}{{ end }}
-  "url": "{{ printf "%s" .Permalink }}",
+  "url": {{ printf "%s" .Permalink }},
   "wordCount": "{{ .WordCount }}",
   {{- $ISO8601 := "2006-01-02T15:04:05-07:00" }}
   {{- if not .PublishDate.IsZero }}
@@ -34,7 +34,7 @@
   {{- end }}
   "author": {
     "@type": "Person",
-    "name": "{{ .Params.author | default .Site.Params.author }}"
+    "name": {{ .Params.author | default .Site.Params.author }}
   }
   {{- if or (.Params.keywords) (or (.Params.categories) (.Params.tags)) -}}
   ,

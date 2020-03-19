@@ -4,11 +4,11 @@
   "@context": "http://schema.org",
   "@type": "Blog",
   {{- /* Google recommends the headline be no more than 110 characters */}}
-  "headline": "{{ substr .Site.Title 0 110 }}",
-  "url" : "{{ printf "%s" .Permalink }}",
+  "headline": {{ substr .Site.Title 0 110 }},
+  "url" : {{ printf "%s" .Permalink }},
   "author": {
     "@type": "Person",
-    "name": "{{ .Site.Params.author }}"
+    "name": {{ .Site.Params.author }}
   },
   {{- $ISO8601 := "2006-01-02T15:04:05-07:00" }}
   {{- if not .Date.IsZero }}
