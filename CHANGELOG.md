@@ -8,6 +8,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Updated
 - npm dependencies: rtlcss 2.5.0, webpack 4.42.0, fontawesome solid icons 5.12.1
 
+### Fixed
+- Fix "Unparsable structured data" error in JSON-LD (@alanorth)
+
 ## [[1.4.0]] - 2020-01-28
 ### Added
 - Farsi strings for user interface
