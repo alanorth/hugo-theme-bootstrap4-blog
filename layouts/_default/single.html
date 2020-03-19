@@ -38,12 +38,12 @@
   }
   {{- if or (.Params.keywords) (or (.Params.categories) (.Params.tags)) -}}
   ,
-  "keywords": "{{ delimit (union .Params.keywords (union .Params.categories .Params.tags)) ", " }}"
+  "keywords": {{ delimit (union .Params.keywords (union .Params.categories .Params.tags)) ", " }}
   {{- end }}
 
   {{- with .Params.description -}}
   ,
-  "description": "{{ . }}"
+  "description": {{ . }}
   {{- end }}
 }
 </script>
