@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## Unreleased changes
+## [[1.4.1]] - 2020-03-19
 ### Updated
 - npm dependencies: rtlcss 2.5.0, webpack 4.42.0, fontawesome solid icons 5.12.1
 
