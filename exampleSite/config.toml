@@ -91,5 +91,7 @@ summaryLength = 50
 # Languages to render
 #[languages.en]
 #[languages.bg]
+  # Bulgarian date format is dd.mm.yyyy
+  #date_format = "02.01.2006"
 
 # vim: ts=2 sw=2 et
