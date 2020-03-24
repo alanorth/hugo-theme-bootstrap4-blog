@@ -36,3 +36,9 @@
 
 - id: links
   translation: "Links"
+  
+- id: authoredBy
+  translation: "von"
+
+- id: postedIn
+  translation: "in"
