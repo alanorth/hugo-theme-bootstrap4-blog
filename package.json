@@ -9,7 +9,7 @@
   "scripts": {
     "build:css": "node-sass --output-style expanded --precision 6 source/scss/style.scss assets/css/style.css.tmp && cleancss --level 1 assets/css/style.css.tmp -o assets/css/style.css",
     "build:rtlcss": "rtlcss -s assets/css/style.css.tmp assets/css/style.rtl.css.tmp && cleancss --level 1 assets/css/style.rtl.css.tmp -o assets/css/style.rtl.css",
-    "build:cookieconsent": "cp node_modules/cookieconsent/build/cookieconsent.min.css assets/css && cp node_modules/cookieconsent/build/cookieconsent.min.js assets/js",
+    "build:cookieconsent": "cp node_modules/@chiiya/haven/dist/haven.umd.min.js assets/js",
     "build:js": "webpack",
     "build": "npm run build:css && npm run build:rtlcss && npm run build:js && npm run build:cookieconsent && npm run clean",
     "clean": "rm assets/css/style.css.tmp assets/css/style.rtl.css.tmp"
@@ -18,12 +18,12 @@
   "author": "Alan Orth",
   "license": "CC-BY-3.0",
   "devDependencies": {
+    "@chiiya/haven": "^0.6.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
     "@fortawesome/free-brands-svg-icons": "^5.13.0",
     "@fortawesome/free-solid-svg-icons": "^5.13.0",
     "bootstrap": "~4.5.0",
     "clean-css-cli": "^4.3.0",
-    "cookieconsent": "^3.1.1",
     "node-sass": "^4.14.1",
     "rtlcss": "^2.5.0",
     "webpack": "^4.43.0",

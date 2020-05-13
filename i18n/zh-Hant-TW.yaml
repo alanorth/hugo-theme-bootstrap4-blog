@@ -28,7 +28,7 @@
 - id: cookieLink
   translation: "進一步瞭解。"
 
-- id: cookieDismiss
+- id: cookieAccept
   translation: "知道了！"
 
 - id: backToTop

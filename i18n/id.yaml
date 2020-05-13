@@ -28,7 +28,7 @@
 - id: cookieLink
   translation: "Pelajari"
 
-- id: cookieDismiss
+- id: cookieAccept
   translation: "Paham!"
 
 - id: backToTop

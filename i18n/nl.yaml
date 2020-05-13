@@ -28,7 +28,7 @@
 - id: cookieLink
   translation: "Lees hier meer"
 
-- id: cookieDismiss
+- id: cookieAccept
   translation: "OK"
 
 - id: backToTop

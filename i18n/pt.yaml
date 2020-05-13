@@ -28,5 +28,5 @@
 - id: cookieLink
   translation: "Saiba mais."
 
-- id: cookieDismiss
+- id: cookieAccept
   translation: "Ok!"

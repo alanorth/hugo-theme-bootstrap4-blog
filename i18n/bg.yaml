@@ -28,8 +28,11 @@
 - id: cookieLink
   translation: "Научете повече."
 
-- id: cookieDismiss
-  translation: "Разбрах!"
+- id: cookieAccept
+  translation: "Съгласен съм"
+
+- id: cookieDecline
+  translation: "Не съм съгласен"
 
 - id: backToTop
   translation: "Нагоре"

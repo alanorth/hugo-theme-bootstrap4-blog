@@ -28,8 +28,8 @@
 - id: cookieLink
   translation: "Weitere Informationen"
 
-- id: cookieDismiss
-  translation: "OK"
+- id: cookieDecline
+  translation: "Nicht zustimmen"
 
 - id: backToTop
   translation: "Zurück zum Anfang"

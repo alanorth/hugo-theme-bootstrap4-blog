@@ -28,8 +28,11 @@
 - id: cookieLink
   translation: "Learn more."
 
-- id: cookieDismiss
-  translation: "Got it!"
+- id: cookieAccept
+  translation: "Agree"
+
+- id: cookieDecline
+  translation: "Disagree"
 
 - id: backToTop
   translation: "Back to top"

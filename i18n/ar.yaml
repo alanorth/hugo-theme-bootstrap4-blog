@@ -28,7 +28,7 @@
 - id: cookieLink
   translation: ".اعْرَف أَكْثَر"
 
-- id: cookieDismiss
+- id: cookieAccept
   translation: "!أُوَافِق"
 
 - id: backToTop
