@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Updated
 - cookieconsent library to version 3.1.1 (@alanorth)
 - i18n language keys for German (#dermellor, #131)
+- Boostrap v4.5.0
+- Minor version bump for webpack, node-sass, and fontawesome
 
 ## [[1.4.2]] - 2020-03-22
 ### Fixed
