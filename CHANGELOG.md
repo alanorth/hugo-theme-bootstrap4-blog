@@ -11,6 +11,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Boostrap v4.5.0
 - Minor version bump for webpack, node-sass, and fontawesome
 
+### Changed
+- Use Haven for GDPR-compliant popup instead of cookieconsent, which is now
+configured as *opt-in* and does not load Google Analytics or send a hit until
+the user agrees.
+  - Note to translators that some strings have changed, please check:
+    - `cookieAccept`: the string for the "Agree" button
+    - `cookieDecline`: the string for the "Disagree" button
+
 ## [[1.4.2]] - 2020-03-22
 ### Fixed
 - Encoding of dates in HTML (@alanorth)
