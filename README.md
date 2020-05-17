@@ -13,9 +13,8 @@ See [picturingjordan.com](https://picturingjordan.com) for an example of this th
 - robots.txt linking to XML sitemap (disabled by default, see [Hugo docs](https://gohugo.io/extras/robots-txt/))
 - Basic support for [multi-lingual content](https://gohugo.io/content-management/multilingual/) (added in Hugo 0.17) and user interface translation (i18n), including RTL languages like Arabic and Farsi
 - Supports Google, Bing, and Yandex site verification via meta tags
-- Supports Google Analytics (async version), see [Hugo docs](https://gohugo.io/extras/analytics/)
+- Supports GDPR-compliant Google Analytics (script is not even loaded until *after* the user agrees) with configurable consent banner, see [`exampleSite/config.toml`](https://github.com/alanorth/hugo-theme-bootstrap4-blog/blob/master/exampleSite/config.toml)
 - Supports Disqus comments, see [Hugo docs](https://gohugo.io/extras/comments/)
-- Can show a message about cookie/personal data usage to the user, see [`exampleSite/config.toml`](https://github.com/alanorth/hugo-theme-bootstrap4-blog/blob/master/exampleSite/config.toml) (does not load Google Analytics until the user agrees)
 - Allow addition of custom `<head>` code in site's `layouts/partials/head-custom.html` (see [#17](https://github.com/alanorth/hugo-theme-bootstrap4-blog/pull/17))
 - Configurable display of summaries of content in list templates.
 - Configurable keywords for every post
