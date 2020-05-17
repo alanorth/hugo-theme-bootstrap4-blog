@@ -26,7 +26,7 @@ Haven.create({
         {
             name: 'google-analytics',
             options: {
-                    id: '{{ .Site.Params.googleAnalytics }}',
+                    id: {{ .Site.GoogleAnalytics }},
             },
             purposes: ['analytics'],
             inject: true,
