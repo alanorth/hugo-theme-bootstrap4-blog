@@ -4,7 +4,9 @@
 <script>
 Haven.create({
     notification: {
-        policyUrl: "{{ .Site.Params.cookie_consent_info_url | absURL }}",
+        {{ with .Site.Params.cookie_consent_info_url | absURL -}}
+        policyUrl: {{ . }},
+        {{- end }}
         styles: {
             background: '#428bca',
             textColor: '#ffffff',
