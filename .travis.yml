@@ -5,6 +5,6 @@ node_js:
   - 13
   - 14
 script: npm run build
-dist: bionic
+dist: focal
 
 # vim: ts=2 sw=2 et
