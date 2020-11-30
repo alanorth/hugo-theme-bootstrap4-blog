@@ -1,6 +1,6 @@
 // selectively import components we need from bootstrap
 // see: node_modules/bootstrap/scss/bootstrap.scss
-@import 'source/scss/bootstrap';
+@import 'bootstrap';
 
 // local style overrides
-@import 'source/scss/main';
+@import 'main';
