@@ -7,12 +7,12 @@
     "url": "https://github.com/alanorth/hugo-theme-bootstrap4-blog.git"
   },
   "scripts": {
-    "build:css": "node-sass --output-style expanded --precision 6 source/scss/style.scss assets/css/style.css.tmp && cleancss --level 1 assets/css/style.css.tmp -o assets/css/style.css",
+    "build:css": "sass --style expanded source/scss/style.scss assets/css/style.css.tmp && cleancss --level 1 assets/css/style.css.tmp -o assets/css/style.css",
     "build:rtlcss": "rtlcss -s assets/css/style.css.tmp assets/css/style.rtl.css.tmp && cleancss --level 1 assets/css/style.rtl.css.tmp -o assets/css/style.rtl.css",
     "build:cookieconsent": "cp node_modules/@chiiya/haven/dist/haven.umd.min.js assets/js",
     "build:js": "webpack",
     "build": "npm run build:css && npm run build:rtlcss && npm run build:js && npm run build:cookieconsent && npm run clean",
-    "clean": "rm assets/css/style.css.tmp assets/css/style.rtl.css.tmp"
+    "clean": "rm assets/css/style.css.tmp assets/css/style.css.tmp.map assets/css/style.rtl.css.tmp"
   },
   "keywords": "hugo",
   "author": "Alan Orth",
@@ -24,8 +24,8 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
     "bootstrap": "^4.5.3",
     "clean-css-cli": "^4.3.0",
-    "node-sass": "^5.0.0",
     "rtlcss": "^2.6.1",
+    "sass": "^1.29.0",
     "webpack": "^5.4.0",
     "webpack-cli": "^3.3.12"
   }
