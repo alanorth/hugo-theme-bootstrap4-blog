@@ -1,0 +1,42 @@
+<!--
+Import Hugo's internal twitter_cards.html template to add support for resolving
+images in page bundles and with falling back to the default of looking in the
+static assets directory.
+
+See: tpl/tplimpl/embedded/templates/twitter_cards.html
+See: https://github.com/gohugoio/hugo/issues/5078
+-->
+{{- with $.Params.images -}}
+<meta name="twitter:card" content="summary_large_image"/>
+{{/* try to get the image from the page bundle */}}
+{{- with $.Page.Resources.GetMatch (printf "*%s*" .) -}}
+<meta name="twitter:image" content="{{ .Permalink }}"/>
+{{- else -}}
+<meta name="twitter:image" content="{{ index . 0 | absURL }}"/>
+{{- end -}}
+{{ else -}}
+{{- $images := $.Resources.ByType "image" -}}
+{{- $featured := $images.GetMatch "*feature*" -}}
+{{- if not $featured }}{{ $featured = $images.GetMatch "{*cover*,*thumbnail*}" }}{{ end -}}
+{{- with $featured -}}
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="{{ $featured.Permalink }}"/>
+{{- else -}}
+{{- with $.Site.Params.images -}}
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="{{ index . 0 | absURL }}"/>
+{{ else -}}
+<meta name="twitter:card" content="summary"/>
+{{- end -}}
+{{- end -}}
+{{- end }}
+<meta name="twitter:title" content="{{ .Title }}"/>
+<meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end -}}"/>
+{{ with .Site.Social.twitter -}}
+<meta name="twitter:site" content="@{{ . }}"/>
+{{ end -}}
+{{ range .Site.Authors }}
+{{ with .twitter -}}
+<meta name="twitter:creator" content="@{{ . }}"/>
+{{ end -}}
+{{ end -}}
