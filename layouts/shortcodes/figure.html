@@ -1,0 +1,92 @@
+{{/*
+
+figure with auto-resizing and srcset v2020-11-30
+
+Drop-in replacement for Hugo's figure shortcode as of 2020-05-02 that uses img srcset
+to enable browsers to download only the resolution that they need.
+
+The resizing and srcset magic only works for images that are part of the page
+bundle. It will fall back to stock Hugo figure behaviour otherwise.
+
+Improvements that were initially out of reach of my Hugo template programming "skills"
+but have now been taken care of:
+- [x] gracefully handle images that are not in page bundle, i.e. no image processing available
+- [x] use a single configurable sizes array, and derive everything from there
+
+See https://cpbotha.net/2020/05/02/drop-in-replacement-for-hugo-figure-shortcode-with-img-srcset-support/
+
+- original srcset img shortcode from: https://laurakalbag.com/processing-responsive-images-with-hugo/
+- original hugo figure shortcode from: https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/embedded/templates/shortcodes/figure.html
+- no unnecessary resizes and more nudges by Stéfan van der Walt https://mentat.za.net/
+- mashing together and srcset logic fixes by Charl P. Botha https://cpbotha.net/
+
+Changes:
+- 2020-11-30 handle images that are rotated 90 degrees (should handle more eventually)
+- 2020-05-10 fall back to stock Hugo behaviour when no page bundle found
+- 2020-05-04 no unnecessary resizes, sizes in array
+- 2020-05-02 initial release
+
+*/}}
+
+{{/* hugo will resize to all of these sizes that are smaller than your original. configure if you like! */}}
+{{ $sizes := (slice "480" "800" "1200" "1500") }}
+
+{{/* get file that matches the filename as specified as src="" in shortcode */}}
+{{ $src := .Page.Resources.GetMatch (printf "*%s*" (.Get "src")) }}
+
+<figure{{ with .Get "class" }} class="{{ . }}"{{ end }}>
+    {{- if .Get "link" -}}
+        <a href="{{ .Get "link" }}"{{ with .Get "target" }} target="{{ . }}"{{ end }}{{ with .Get "rel" }} rel="{{ . }}"{{ end }}>
+    {{- end }}
+    <img
+        {{ if $src }}
+            sizes="(min-width: 35em) 1200px, 100vw"
+            {{/* only srcset images smaller than or equal to the src (original) image size, as Hugo will upscale small images */}}  
+            srcset='
+            {{ range $sizes }}
+                   {{ $size := . }}
+                   {{/* https://discourse.gohugo.io/t/image-exif-orientation/22902/7 */}}
+                   {{/* set orientation to 1 just in case it doesnt exist in Exif */}}
+                   {{ $orientation := 1 }}
+                   {{ with $src.Exif }}
+                   {{ $orientation := .Tags.Orientation }}
+                   {{ if and (ge $src.Width $size) (eq $orientation 8) }}
+                       {{ ($src.Resize (printf "%sx r90" $size)).Permalink }} {{ (printf "%sw" $size) }},
+                   {{ else if ge $src.Width $size }}{{ ($src.Resize (printf "%sx" $size)).Permalink }} {{ (printf "%sw" $size) }},{{ end }}
+                   {{ end }}
+            {{ end }}'
+
+            {{/* when no support for srcset (old browsers, RSS), we load small (800px) */}}
+            {{/* if image smaller than 800, then load the image itself */}}
+            {{ if ge $src.Width "800" }}src="{{ ($src.Resize "800x").Permalink }}"
+            {{ else }}src="{{ $src.Permalink }}"
+            {{ end }}
+
+        {{ else }}
+            {{/* fall back to stock hugo behaviour when image is not available in bundle */}}
+            src="{{ .Get "src" }}"
+        {{ end }}
+
+        {{- if or (.Get "alt") (.Get "caption") }}
+            alt="{{ with .Get "alt" }}{{ . }}{{ else }}{{ .Get "caption" | markdownify| plainify }}{{ end }}"
+        {{- end -}}
+        {{- with .Get "width" }} width="{{ . }}"{{ end -}}
+        {{- with .Get "height" }} height="{{ . }}"{{ end -}}
+    /> <!-- Closing img tag -->
+    {{- if .Get "link" }}</a>{{ end -}}
+    {{- if or (or (.Get "title") (.Get "caption")) (.Get "attr") -}}
+        <figcaption>
+            {{ with (.Get "title") -}}
+                <h4>{{ . }}</h4>
+            {{- end -}}
+            {{- if or (.Get "caption") (.Get "attr") -}}<p>
+                {{- .Get "caption" | markdownify -}}
+                {{- with .Get "attrlink" }}
+                    <a href="{{ . }}">
+                {{- end -}}
+                {{- .Get "attr" | markdownify -}}
+                {{- if .Get "attrlink" }}</a>{{ end }}</p>
+            {{- end }}
+        </figcaption>
+    {{- end }}
+</figure>
