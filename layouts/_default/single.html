@@ -7,18 +7,28 @@
   "@type": "BlogPosting",
   {{- /* Google recommends the headline be no more than 110 characters */}}
   "headline": {{ substr .Title 0 110 }},
-  {{- with .Params.images -}}{{ range first 1 . }}
+  {{- with .Params.images -}}{{- range first 1 . -}}
+  {{/* try to get the image from the page bundle */}}
+  {{- with $.Page.Resources.GetMatch (printf "*%s*" .) }}
   "image": {
     "@type": "ImageObject",
-    "url": {{ . | absURL }}
+    "url": {{ .Permalink }},
+    "height": "{{ .Height }}",
+    "width": "{{ .Width }}"
+  {{/* otherwise, get the image from static */}}
+  {{- else }}
+  "image": {
+    "@type": "ImageObject",
+    {{- $image := . -}}
     {{- /* Don't try to get imageConfig if image param is not local */ -}}
     {{- if not (or (hasPrefix . "http://") (hasPrefix . "https://")) -}}
-    {{- with (imageConfig (printf "/static/%s" .)) -}}
-    ,
+    {{- with (imageConfig (printf "/static/%s" .)) }}
+    "url": {{ $image | absURL }},
     "height": "{{ .Height }}",
     "width": "{{ .Width }}"
     {{- end -}}
-    {{ end }}
+    {{- end -}}
+  {{ end }}
   },
   {{- end -}}{{ end }}
   "url": {{ printf "%s" .Permalink }},
