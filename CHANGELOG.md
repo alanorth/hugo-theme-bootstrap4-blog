@@ -4,9 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## Unreleased
+## [[ 1.6.0 ]] - 2020-12-05
 ### Changed
 - Migrate to dart sass from node-sass (see [LibSass is Deprecated](https://sass-lang.com/blog/libsass-is-deprecated))
+- Use new [figure shortcode](https://cpbotha.net/2020/05/02/drop-in-replacement-for-hugo-figure-shortcode-with-responsive-img-srcset/a) that automatically processes images in a post's page bundle to multiple resolutions and outputs an appropriate img srcset (falls back to getting images from static dir)
 
 ## [[1.5.1]] - 2020-11-15
 ### Updated
