@@ -18,6 +18,7 @@ See [picturingjordan.com](https://picturingjordan.com) for an example of this th
 - Allow addition of custom `<head>` code in site's `layouts/partials/head-custom.html` (see [#17](https://github.com/alanorth/hugo-theme-bootstrap4-blog/pull/17))
 - Configurable display of summaries of content in list templates.
 - Configurable keywords for every post
+- Supports automatic generation of `<img>` srcsets for images in [page bundles](https://gohugo.io/content-management/page-bundles/) using a [new figure shortcode]https://cpbotha.net/2020/05/02/drop-in-replacement-for-hugo-figure-shortcode-with-responsive-img-srcset/) (falls back to default Hugo behavior of looking up images in the static directory)
 
 ## Usage
 Clone the repository to your site's `themes` directory. Refer to [`exampleSite/config.toml`](https://github.com/alanorth/hugo-theme-bootstrap4-blog/blob/master/exampleSite/config.toml) for recommended configuration values.
