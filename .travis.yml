@@ -5,6 +5,8 @@ node_js:
   - 13
   - 14
 script: npm run build
+os: linux
+arch: arm64-graviton2
 dist: focal
 
 # vim: ts=2 sw=2 et
