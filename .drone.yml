@@ -7,7 +7,7 @@ steps:
   image: node:10-alpine
   commands:
   - npm install
-  - npm run dist
+  - npm run build
 
 ---
 kind: pipeline
@@ -19,7 +19,7 @@ steps:
   image: node:12-alpine
   commands:
   - npm install
-  - npm run dist
+  - npm run build
 
 ---
 kind: pipeline
@@ -31,4 +31,4 @@ steps:
   image: node:14-alpine
   commands:
   - npm install
-  - npm run dist
+  - npm run build
