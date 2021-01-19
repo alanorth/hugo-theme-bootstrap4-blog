@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## Unreleased Changes
+### Updated
+- Bootstrap v4.6.0, webpack v5.16.0, haven 0.6.2, etc
+
 ## [[ 1.6.0 ]] - 2020-12-05
 ### Changed
 - Migrate to dart sass from node-sass (see [LibSass is Deprecated](https://sass-lang.com/blog/libsass-is-deprecated))
