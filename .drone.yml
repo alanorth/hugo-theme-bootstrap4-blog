@@ -1,17 +1,5 @@
 kind: pipeline
 type: docker
-name: node10
-
-steps:
-- name: build
-  image: node:10-alpine
-  commands:
-  - npm install
-  - npm run build
-
----
-kind: pipeline
-type: docker
 name: node12
 
 steps:
@@ -29,6 +17,18 @@ name: node14
 steps:
 - name: build
   image: node:14-alpine
+  commands:
+  - npm install
+  - npm run build
+
+---
+kind: pipeline
+type: docker
+name: node15
+
+steps:
+- name: build
+  image: node:15-alpine
   commands:
   - npm install
   - npm run build
