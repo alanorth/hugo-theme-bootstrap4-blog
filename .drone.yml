@@ -6,6 +6,9 @@ steps:
 - name: build
   image: node:12-alpine
   commands:
+  - npm --version
+  - npm install -g npm
+  - npm --version
   - npm install
   - npm run build
 
@@ -18,6 +21,9 @@ steps:
 - name: build
   image: node:14-alpine
   commands:
+  - npm --version
+  - npm install -g npm
+  - npm --version
   - npm install
   - npm run build
 
@@ -30,5 +36,8 @@ steps:
 - name: build
   image: node:15-alpine
   commands:
+  - npm --version
+  - npm install -g npm
+  - npm --version
   - npm install
   - npm run build
