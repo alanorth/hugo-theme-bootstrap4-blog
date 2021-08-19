@@ -30,11 +30,11 @@ steps:
 ---
 kind: pipeline
 type: docker
-name: node15
+name: node16
 
 steps:
 - name: build
-  image: node:15-alpine
+  image: node:16-alpine
   commands:
   - npm --version
   - npm install -g npm
