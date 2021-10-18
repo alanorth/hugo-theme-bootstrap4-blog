@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased Changes
 ### Updated
-- Bootstrap v4.6.0, webpack v5.16.0, haven 0.6.2, etc
+- Bootstrap v4.6.0, webpack v5, haven 0.7.0, clean-css-cli, etc
 
 ## [[ 1.6.0 ]] - 2020-12-05
 ### Changed
