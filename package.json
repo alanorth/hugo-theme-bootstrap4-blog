@@ -18,14 +18,14 @@
   "author": "Alan Orth",
   "license": "CC-BY-3.0",
   "devDependencies": {
-    "@chiiya/haven": "^0.6.2",
+    "@chiiya/haven": "^0.7.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
     "@fortawesome/free-brands-svg-icons": "^5.15.2",
     "@fortawesome/free-solid-svg-icons": "^5.15.2",
     "bootstrap": "^4.6.0",
-    "clean-css-cli": "^4.3.0",
-    "rtlcss": "^2.6.2",
-    "sass": "^1.32.4",
-    "webpack-cli": "^4.5.0"
+    "clean-css-cli": "^5.4.1",
+    "rtlcss": "^3.3.0",
+    "sass": "^1.43.2",
+    "webpack-cli": "^4.9.1"
   }
 }
