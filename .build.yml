@@ -1,6 +1,6 @@
 image: archlinux
 packages:
-  - nodejs-lts-erbium
+  - nodejs-lts-fermium
   - npm
 sources:
   - https://git.sr.ht/~alanorth/hugo-theme-bootstrap4-blog
