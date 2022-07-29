@@ -1,0 +1,50 @@
+- id: about
+  translation: "Om"
+
+- id: home
+  translation: "Hjem"
+
+- id: recentPosts
+  translation: "Seneste indlæg"
+
+- id: readMore
+  translation: "Læs mere"
+
+- id: translations
+  translation: "Oversættelser"
+
+- id: share
+  translation: "Del"
+
+- id: paginatorPrevious
+  translation: "Forrige side"
+
+- id: paginatorNext
+  translation: "Næste side"
+
+- id: cookieMessage
+  translation: "Denne hjemmeside anvender cookies."
+
+- id: cookieLink
+  translation: "Læs mere."
+
+- id: cookieAccept
+  translation: "OK"
+
+- id: cookieDecline
+  translation: "Afbryd"
+
+- id: backToTop
+  translation: "Til toppen"
+
+- id: links
+  translation: "Links"
+
+- id: authoredBy
+  translation: "af"
+
+- id: postedIn
+  translation: "i"
+
+- id: comma
+  translation: ","
