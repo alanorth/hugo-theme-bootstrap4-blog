@@ -9,8 +9,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Bootstrap v4.6.0, webpack v5, haven 0.7.0, clean-css-cli, etc
 - Use Node.js 14 in CI, remove Node.js 12
 
-## Changed
-- Enable support for Bootstrap table classes (#145)
+## Added
+- Support for Bootstrap table classes (#145)
+- i18n language keys for Danish (@schack, #146)
 
 ## [[ 1.6.0 ]] - 2020-12-05
 ### Changed
