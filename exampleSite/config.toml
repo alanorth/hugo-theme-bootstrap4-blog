@@ -3,6 +3,7 @@
 baseurl = "https://example.org/"
 languageCode = "en-us"
 title = "Hugo Bootstrap v4 Blog"
+themesDir = "../.."
 theme = "hugo-theme-bootstrap4-blog"
 # number of posts to show on home/category/tag pages (Default: 10)
 paginate = 5
@@ -25,10 +26,18 @@ summaryLength = 50
   name = "Link 2"
   url = "https://example.org"
 
-#[[menu.navbar]]
-#  name = "Link 1"
-#  url = "https://example.org"
+[[menu.navbar]]
+  name = "Link 1"
+  pageref = "creating-a-new-theme"
 
+[[menu.navbar]]
+  name = "Sub"
+  identifier = "sub"
+
+[[menu.navbar]]
+  name = "Link 2"
+  parent = "sub"
+  pageref = "goisforlovers"
 
 # Theme variables
 #
