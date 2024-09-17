@@ -13,6 +13,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Support for Bootstrap table classes (#145)
 - i18n language keys for Danish (@schack, #146)
 
+## Fixed
+- Deprecations from Hugo (DisqusShortname and GoogleAnalytics)
+
 ## [[ 1.6.0 ]] - 2020-12-05
 ### Changed
 - Migrate to dart sass from node-sass (see [LibSass is Deprecated](https://sass-lang.com/blog/libsass-is-deprecated))
