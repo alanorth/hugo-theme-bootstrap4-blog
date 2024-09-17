@@ -83,7 +83,7 @@
   </ul>
   {{ end }}
 
-  {{ if or (ne ($.Param "sharingicons") false) (.Site.DisqusShortname) }}
+  {{ if or (ne ($.Param "sharingicons") false) (.Site.Config.Services.Disqus.Shortname) }}
   <hr>
   <footer>
 
@@ -91,7 +91,7 @@
   {{ partial "sharing-icons.html" . }}
   {{ end }}
 
-  {{ if and (.Site.DisqusShortname) (ne .Params.comments false) }}
+  {{ if and (.Site.Config.Services.Disqus.Shortname) (ne .Params.comments false) }}
   {{ template "_internal/disqus.html" . }}
   {{ end }}
   </footer>
