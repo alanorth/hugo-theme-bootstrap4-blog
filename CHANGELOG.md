@@ -14,7 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - i18n language keys for Danish (@schack, #146)
 
 ## Fixed
-- Deprecations from Hugo (DisqusShortname and GoogleAnalytics)
+- Deprecations from Hugo v0.134.0 (DisqusShortname and GoogleAnalytics)
 - Deprecations from Hugo v0.146.0 (Templates)
 
 ## [[ 1.6.0 ]] - 2020-12-05
