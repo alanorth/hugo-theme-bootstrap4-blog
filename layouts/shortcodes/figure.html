@@ -48,7 +48,7 @@ Changes:
                    {{/* https://discourse.gohugo.io/t/image-exif-orientation/22902/7 */}}
                    {{/* set orientation to 1 just in case it doesnt exist in Exif */}}
                    {{ $orientation := 1 }}
-                   {{ with $src.Exif }}
+                   {{ with $src.Meta.Exif }}
                    {{ $orientation := .Tags.Orientation }}
                    {{ if and (ge $src.Width $size) (eq $orientation 8) }}
                        {{ ($src.Resize (printf "%sx r90" $size)).Permalink }} {{ (printf "%sw" $size) }},

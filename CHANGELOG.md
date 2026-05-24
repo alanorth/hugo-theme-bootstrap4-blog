@@ -16,6 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Fixed
 - Deprecations from Hugo v0.134.0 (DisqusShortname and GoogleAnalytics)
 - Deprecations from Hugo v0.146.0 (Templates)
+- Deprecations from Hugo v0.155.0 (Image.Exif)
 
 ## [[ 1.6.0 ]] - 2020-12-05
 ### Changed
