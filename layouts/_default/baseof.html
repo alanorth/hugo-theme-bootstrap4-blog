@@ -43,14 +43,32 @@
     {{ block "masthead" . }}
     <div class="blog-masthead">
       <div class="container">
-        <nav class="nav blog-nav">
-          <a class="nav-link {{ if .IsHome }}active{{ end }}" href="{{ .Site.BaseURL | absLangURL }}">{{ i18n "home" }}</a>
-          {{- $currentPage := . -}}
-          {{ range .Site.Menus.navbar }}
-          {{ $menuURL := .URL | absLangURL }}
-          <a class="nav-link{{ if or ($currentPage.IsMenuCurrent "navbar" .) ($currentPage.HasMenuCurrent "navbar" .) }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
-          {{ end }}
-        </nav>
+          <nav class="navbar navbar-dark navbar-expand">
+              <ul class="navbar-nav">
+                  <li class="nav-item {{ if .IsHome }}active{{ end }}">
+                      <a class="nav-link {{ if .IsHome }}active{{ end }}" href="{{ .Site.BaseURL | absLangURL }}">{{ i18n "home" }}</a>
+                  </li>
+                  {{ $currentPage := . }}
+                  {{ range .Site.Menus.navbar }}
+                  {{ if .HasChildren }}
+                  <li class="nav-item dropdown{{ if or ($currentPage.IsMenuCurrent "navbar" .) ($currentPage.HasMenuCurrent "navbar" .) }} active{{end}}">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                          {{ .Name }}
+                      </a>
+                      <div class="dropdown-menu">
+                          {{ range .Children }}
+                          <a class="dropdown-item" href="{{ .URL }}">{{ .Name }}</a>
+                          {{ end }}
+                      </div>
+                  </li>
+                  {{ else }}
+                  <li class="nav-item{{ if or ($currentPage.IsMenuCurrent "navbar" .) ($currentPage.HasMenuCurrent "navbar" .) }} active{{end}}">
+                    <a class="nav-link{{ if or ($currentPage.IsMenuCurrent "navbar" .) ($currentPage.HasMenuCurrent "navbar" .) }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+                  </li>
+                  {{ end }}
+                  {{ end }}
+              </ul>
+          </nav>
       </div>
     </div>
     {{ end }}
@@ -98,6 +116,9 @@
     </footer>
     {{ end }}
 
+      {{ "<!-- bundled bootstrap -->" | safeHTML }}
+      {{ $bootstrap := resources.Get "js/bootstrap.min.js" | resources.Fingerprint }}
+      <script defer src="{{ $bootstrap.Permalink }}" integrity="{{ $bootstrap.Data.Integrity }}" crossorigin="anonymous"></script>
   </body>
 
 </html>

@@ -22,10 +22,13 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
     "@fortawesome/free-brands-svg-icons": "^5.15.2",
     "@fortawesome/free-solid-svg-icons": "^5.15.2",
+    "jquery": "^3.6.1",
+    "popper.js": "^1.16.1",
     "bootstrap": "^4.6.0",
     "clean-css-cli": "^5.4.1",
     "rtlcss": "^3.3.0",
     "sass": "^1.43.2",
+    "webpack": "^5.74.0",
     "webpack-cli": "^4.9.1"
   }
 }
